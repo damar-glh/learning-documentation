@@ -1,12 +1,12 @@
-const form = document.querySelector('#form');
+const form = document.querySelector('#form'); // mengambil element dg queryselector
 const input = document.querySelector('input')
 const list = document.querySelector('#notes');
 
-form.addEventListener('submit', function(e){
-    e.preventDefault();
-    const noteValue = input.value;
-    const newList = document.createElement('li');
+form.addEventListener('submit', function(e){ // add event list + function param e
+    e.preventDefault(); //preventDefault => membatalkan acara jika dapat dibatalkan
+    const noteValue = input.value; //value dari input
+    const newList = document.createElement('li'); // membuat element
     newList.innerText = noteValue;
-    list.append(newList);
+    list.append(newList); // append => menyisipkan objek  setelah anak terakhir dari Elemen
     input.value = '';
 })
