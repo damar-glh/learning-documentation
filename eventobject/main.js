@@ -1,5 +1,5 @@
 document.querySelector('button').addEventListener('click', (e) => {
-    console.log(e);
+    console.log(e); // log menampilkan di console
 });
 
 const input = document.querySelector('input');
