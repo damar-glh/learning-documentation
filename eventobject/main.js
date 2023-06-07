@@ -3,7 +3,7 @@ document.querySelector('button').addEventListener('click', (e) => {
 });
 
 const input = document.querySelector('input');
-input,addEventListener('keydown', (e) => {
+input.addEventListener('keydown', (e) => {
     switch(e.code){
         case 'ArrowUp' :
             console.log('Tombol Arah Atas');
