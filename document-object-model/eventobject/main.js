@@ -3,7 +3,7 @@ document.querySelector('button').addEventListener('click', (e) => { // add event
 });
 
 const input = document.querySelector('input');
-input.addEventListener('keydown', (e) => {
+input.addEventListener('keydown', (e) => { // keydown event heandler saat menekan tombol pada keyboard.
     switch(e.code){ // .code
         case 'ArrowUp' :
             console.log('Tombol Arah Atas');
@@ -22,6 +22,7 @@ input.addEventListener('keydown', (e) => {
     }
 });
 
-// input.addEventListener('keyup', () => {
+// input.addEventListener('keyup', () => { 
+// melepaskan tombol pada keyboard dan setelahnya nilai input / textarea diperbarui 
 //     console.log('Tombol dirilis');
 // })
