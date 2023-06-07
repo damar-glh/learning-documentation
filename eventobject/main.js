@@ -1,4 +1,4 @@
-document.querySelector('button').addEventListener('click', (e) => {
+document.querySelector('button').addEventListener('click', (e) => { // add event list
     console.log(e); // log menampilkan di console
 });
 
