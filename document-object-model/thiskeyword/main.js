@@ -1,4 +1,4 @@
-const generateRandomColor = () => {
+const generateRandomColor = () => { // function generateRandomColor dengan math.random
     const r = Math.floor(Math.random() * 255);
     const g = Math.floor(Math.random() * 255);
     const b = Math.floor(Math.random() * 255);
@@ -6,7 +6,7 @@ const generateRandomColor = () => {
     return ` rgb(${r}, ${g}, ${b})`;
 }
 
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('button'); // mengambil semua element button dg ..All
 for (let button of buttons){
     button.addEventListener('click', colorize);
 }
