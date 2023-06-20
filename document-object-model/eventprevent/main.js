@@ -3,7 +3,7 @@ const input = document.querySelector('input')
 const list = document.querySelector('#notes');
 
 form.addEventListener('submit', function(e){ // add event list + function param e
-    e.preventDefault(); //preventDefault => membatalkan acara jika dapat dibatalkan
+    e.preventDefault(); //preventDefault => membatalkan kebiasaan dari element
     const noteValue = input.value; //value dari input
     const newList = document.createElement('li'); // membuat element
     newList.innerText = noteValue;
