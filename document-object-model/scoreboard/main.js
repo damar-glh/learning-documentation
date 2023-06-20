@@ -3,7 +3,7 @@ const p2Button = document.querySelector('#p2-button');
 const p1Display = document.querySelector('#p1-display');
 const p2Display = document.querySelector('#p2-display');
 const resetButton = document.querySelector('#reset');
-const poinOption = document.querySelector('#winPoint');
+const poinOption = document.querySelector('#playto');
 
 let p1Score = 0;
 let p2Score = 0;
@@ -19,7 +19,7 @@ function reset(){
 }
 resetButton.addEventListener('click', reset);
 
-winPoint.addEventListener('change', function(){
+poinOption.addEventListener('change', function(){
     winPoint = parseInt(this.value);
     reset();
 })
