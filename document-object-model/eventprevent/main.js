@@ -2,6 +2,14 @@ const form = document.querySelector('#form'); // mengambil element dg queryselec
 const input = document.querySelector('input')
 const list = document.querySelector('#notes');
 
+input.addEventListener('change', (e) => {
+    console.log("Ini nilainya berubah");
+})
+
+input.addEventListener('input', (e) => { // menghitung sebanyak karakter
+    document.querySelector('h1').innerText = input.value;
+})
+
 form.addEventListener('submit', function(e){ // add event list + function param e
     e.preventDefault(); //preventDefault => membatalkan kebiasaan dari element
     const noteValue = input.value; //value dari input
