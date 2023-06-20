@@ -1,6 +1,9 @@
+html{
+	background-color: #1f2937;
+}
 body {
 	color: #fff;
-	background: #1f2937;
+	background-color: #1f2937;
 	font-family: verdana, sans-serif;
 }
 
@@ -21,6 +24,7 @@ h2 {
 	background: #000;
 	color: #f94f6d;
 	min-width: 205px;
+	border-radius: 50px;
 }
 
 .btn-primary {
