@@ -23,3 +23,9 @@ const requestPromise = (url) => {
 		}, delay);
 	});
 };
+
+requestCallback('movie.com', function(){
+    console.log('It work.');
+}, function(){
+    console.log('Erorr, It not work.')
+})
