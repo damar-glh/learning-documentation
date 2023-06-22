@@ -31,6 +31,16 @@ requestCallback('movie.com', function(response){
         console.log('It work.', response);
         requestCallback('movie.com', function(response){
             console.log('It work.', response);
+            requestCallback('movie.com', function(response){
+                console.log('It work.', response);
+                requestCallback('movie.com', function(response){
+                    console.log('It work.', response);
+                }, function(error){
+                    console.log('Erorr, It not work.', error)
+                })
+            }, function(error){
+                console.log('Erorr, It not work.', error)
+            })
         }, function(error){
             console.log('Erorr, It not work.', error)
         })
