@@ -13,14 +13,14 @@ body{
 }
 
 .hamburger-line{
-    @apply w-[30px] h-[2px] my-2 block bg-dark;
+    @apply w-[30px] h-[2px] my-2 block bg-dark; // set bisa pakai -[?]
 }
 
 .hamburger-active  > span:nth-child(1) { // mengambil elemen child(1)
     @apply rotate-45;
 }
 
-.hamburger-active  > span:nth-child(2) {
+.hamburger-active  > span:nth-child(2) { 
     @apply scale-0;
 }
 
