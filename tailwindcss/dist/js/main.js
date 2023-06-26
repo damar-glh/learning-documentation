@@ -11,7 +11,7 @@ window.onscroll = function(){
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop; // mengambil top halaman
 
-    if(window.pageYOffset > fixedNav){
+    if(window.pageYOffset > fixedNav){ // scroll Y
         header.classList.add('navbar-fixed');
     } else{
         header.classList.remove('navbar-fixed');
