@@ -6,6 +6,14 @@ hamburger.addEventListener('click', function(){
     navMenu.classList.toggle('hidden');
 })
 
+// click ciluar hamburger
+window.addEventListener('click', function(e){
+    if(e.target != hamburger && e.target != navMenu){
+    hamburger.classList.remove('hamburger-active'); // toggle bisa on dan of
+    navMenu.classList.add('hidden');
+    }
+})
+
 // navbar-fix
 window.onscroll = function(){
     const header = document.querySelector('header');
@@ -21,3 +29,4 @@ window.onscroll = function(){
         toTop.classList.add('hidden'); // add 'hidden'
     }
 }
+
