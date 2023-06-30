@@ -18,6 +18,6 @@ window.onscroll = function(){
     } else{
         header.classList.remove('navbar-fixed');
         toTop.classList.remove('flex');// remove 'flex'
-        toTop.classList.add('hidden');
+        toTop.classList.add('hidden'); // add 'hidden'
     }
 }
