@@ -14,7 +14,7 @@ window.onscroll = function(){
     if(window.pageYOffset > fixedNav){ // scroll Y
         header.classList.add('navbar-fixed');
         toTop.classList.remove('hidden'); // remove 'hidden'
-        toTop.classList.add('flex');
+        toTop.classList.add('flex'); // add 'flex'
     } else{
         header.classList.remove('navbar-fixed');
         toTop.classList.remove('flex');
