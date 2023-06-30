@@ -13,7 +13,7 @@ window.onscroll = function(){
     const toTop = document.querySelector('#to-top');
     if(window.pageYOffset > fixedNav){ // scroll Y
         header.classList.add('navbar-fixed');
-        toTop.classList.remove('hidden');
+        toTop.classList.remove('hidden'); // remove 'hidden'
         toTop.classList.add('flex');
     } else{
         header.classList.remove('navbar-fixed');
