@@ -1219,19 +1219,13 @@ body{
   color: rgb(20 184 166 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:hidden) {
+  display: none;
+}
+
 :is(.dark .dark\:bg-dark) {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
-:is(.dark .dark\:bg-slate-500) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-:is(.dark .dark\:bg-white) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:bg-primary) {
@@ -1239,9 +1233,33 @@ body{
   background-color: rgb(20 184 166 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:text-white) {
+:is(.dark .dark\:bg-slate-800) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-white) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-slate-300) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-slate-700) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-none) {
+  background-image: none;
+}
+
+:is(.dark .dark\:text-dark) {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-primary) {
@@ -1249,9 +1267,9 @@ body{
   color: rgb(20 184 166 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:text-dark) {
+:is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:shadow-slate-300) {
@@ -1260,31 +1278,13 @@ body{
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-3 {
-    margin-top: 0.75rem;
-  }
-
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
-
-  @media (min-width: 768px) {
-    .sm\:md\:mt-3 {
-      margin-top: 0.75rem;
-    }
-  }
 }
 
 @media (min-width: 768px) {
-  .md\:mt-3 {
-    margin-top: 0.75rem;
-  }
-
-  .md\:-mt-3 {
-    margin-top: -0.75rem;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1323,12 +1323,12 @@ body{
     margin-right: auto;
   }
 
-  .lg\:mt-9 {
-    margin-top: 2.25rem;
-  }
-
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-9 {
+    margin-top: 2.25rem;
   }
 
   .lg\:block {
