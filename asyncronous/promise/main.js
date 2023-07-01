@@ -25,28 +25,35 @@ const requestPromise = (url) => {
 };
 
 // callback hell
-requestCallback('movie.com', function(response){
-    console.log('It work.', response);
-    requestCallback('movie.com', function(response){
-        console.log('It work.', response);
-        requestCallback('movie.com', function(response){
-            console.log('It work.', response);
-            requestCallback('movie.com', function(response){
-                console.log('It work.', response);
-                requestCallback('movie.com', function(response){
-                    console.log('It work.', response);
-                }, function(error){
-                    console.log('Erorr, It not work.', error)
-                })
-            }, function(error){
-                console.log('Erorr, It not work.', error)
-            })
-        }, function(error){
-            console.log('Erorr, It not work.', error)
-        })
-    }, function(error){
-        console.log('Erorr, It not work.', error)
-    })
-}, function(error){
-    console.log('Erorr, It not work.', error)
-})
+// requestCallback('movie.com', function(response){
+//     console.log('It work.', response);
+//     requestCallback('movie.com', function(response){
+//         console.log('It work.', response);
+//         requestCallback('movie.com', function(response){
+//             console.log('It work.', response);
+//             requestCallback('movie.com', function(response){
+//                 console.log('It work.', response);
+//                 requestCallback('movie.com', function(response){
+//                     console.log('It work.', response);
+//                 }, function(error){
+//                     console.log('Erorr, It not work.', error)
+//                 })
+//             }, function(error){
+//                 console.log('Erorr, It not work.', error)
+//             })
+//         }, function(error){
+//             console.log('Erorr, It not work.', error)
+//         })
+//     }, function(error){
+//         console.log('Erorr, It not work.', error)
+//     })
+// }, function(error){
+//     console.log('Erorr, It not work.', error)
+// })
+
+// promise request
+requestPromise('movie.com').then((response) => {
+    console.log('succes', response);
+}).catch((error) => {
+    console.log('error', error);
+});
