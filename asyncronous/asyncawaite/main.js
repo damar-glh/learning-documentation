@@ -1,5 +1,4 @@
 const hello = async () => {
-	// throw 'Maaf gak kenal';
 	return 'Hello World';
 };
 
