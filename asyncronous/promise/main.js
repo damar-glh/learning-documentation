@@ -60,7 +60,11 @@ const requestPromise = (url) => {
 
 const contohPromise = () => {
 	return new Promise((resolve, reject) => {
-		resolve(() => {});
-		reject(() => {});
+		resolve(() => {
+			'berhasil'
+		});
+		reject(() => {
+			'gagal'
+		});
 	})
 }
