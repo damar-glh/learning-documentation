@@ -52,8 +52,15 @@ const requestPromise = (url) => {
 // })
 
 // promise request
-requestPromise('movie.com').then((response) => {
-    console.log('succes', response);
-}).catch((error) => {
-    console.log('error', error);
-});
+// requestPromise('movie.com').then((response) => {
+//     console.log('succes', response);
+// }).catch((error) => {
+//     console.log('error', error);
+// });
+
+const contohPromise = () => {
+	return new Promise((resolve, reject) => {
+		resolve(() => {});
+		reject(() => {});
+	})
+}
