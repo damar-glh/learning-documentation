@@ -1,3 +1,5 @@
+async function helo() {}
+
 const hello = async () => {
 	return 'Hello World';
 };
