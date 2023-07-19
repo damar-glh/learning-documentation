@@ -1,4 +1,5 @@
 // keyword async sudah pasri itu promise
+// ada dua kemungkinan yaitu resolve dan reject
 
 const hai = async () => {
 	return 'haiiiii';
