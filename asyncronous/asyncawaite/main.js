@@ -6,11 +6,13 @@ const hai = async () => {
 
 hai()
 	.then((res) => {
-		console.log('response', res)
+		console.log('response', res);
 	})
+	.catch((err) => {
+		console.log('error', err);
+	});
 
 
-	
 const hello = async () => {
 	return 'Hello World';
 };
