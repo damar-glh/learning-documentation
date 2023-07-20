@@ -17,8 +17,16 @@ const delayedColorChange = (color, delay) => {
 //     .then(() => delayedColorChange('black', 1000))
 
 async function changeColor() {
-    delayedColorChange('red', 1000);
-    delayedColorChange('yellow', 1000)
+    await delayedColorChange('red', 1000); //keyword await
+    await delayedColorChange('yellow', 1000)
+    return 'all done'
 }
 
-changeColor();
+changeColor().then((res) => alert(res));
+
+async function printRainbow() {
+    changeColor();
+    return 'all done'
+}
+
+printRainbow().then((res) => alert(res));
