@@ -68,3 +68,13 @@ const contohPromise = () => {
 		});
 	})
 }
+
+// handler error dengan async and await
+async function requestHandler() {
+	try {
+		let result = await requestPromise('movie.com');
+		console.log(result);
+	} catch (error) {
+		console.log('Error', error);
+	}
+}
