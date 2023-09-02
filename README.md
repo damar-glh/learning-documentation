@@ -13,10 +13,9 @@
 </ul>
 
 <li>Asynchronous Of JavaScript.
+<ul>
 <li>
-<li>
-<li>
-<li>
+</ul>
 
 <li>AJAX (Asynchronous JS and Xml)
 <ul>
