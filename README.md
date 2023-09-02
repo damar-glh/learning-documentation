@@ -17,5 +17,11 @@
 <li>
 <li>
 <li>
+
+<li>AJAX (Asynchronous JS and Xml)
+<ul>
+<li>request</li>
+</ul>
+
 </ol>
 <h6> --- damaraaa. ☔<h6>
