@@ -19,7 +19,7 @@
 
 <li>AJAX (Asynchronous JS and Xml)
 <ul>
-<li>request</li>
+<li>ajax request (json)</li>
 </ul>
 
 </ol>
