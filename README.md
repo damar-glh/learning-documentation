@@ -22,6 +22,10 @@
 <li>ajax request (json)</li>
 <li>application programming interface (API)</li>
 <li>javascript object notation (json)</li>
+<ul>
+<li>JSON.parse()</li>
+<li>JSON.stringify()</li>
+</ul>
 </ul>
 
 </ol>
