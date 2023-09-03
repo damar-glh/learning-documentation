@@ -21,6 +21,7 @@
 <ul>
 <li>ajax request (json)</li>
 <li>application programming interface (API)</li>
+<li>javascript object notation (json)</li>
 </ul>
 
 </ol>
