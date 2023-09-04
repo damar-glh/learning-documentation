@@ -28,8 +28,8 @@
 </ul>
 <li>tools request web api / serviss</li>
 <ul>
-<li>postman : <a>https://www.postman.com</a></li>
-<a>https://hoppscotch.io</a>
+<a href="https://www.postman.com" target="blank">postman</a>
+<a href="https://hoppscotch.io" target="blank">hoppscotch</a>
 </ul>
 </ul>
 
