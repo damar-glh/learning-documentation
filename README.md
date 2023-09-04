@@ -27,8 +27,8 @@
 <li>JSON.stringify()</li>
 </ul>
 <li>tools request web api / serviss : </li><a href="https://www.postman.com" target="blank">postman</a> & <a href="https://hoppscotch.io" target="blank">hoppscotch</a>
-</ul>
 <li>http verb / http method</li>
+</ul>
 
 </ol>
 <h6> --- damaraaa. ☔<h6>
