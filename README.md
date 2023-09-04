@@ -26,11 +26,7 @@
 <li>JSON.parse()</li>
 <li>JSON.stringify()</li>
 </ul>
-<li>tools request web api / serviss</li>
-<ul>
-<a href="https://www.postman.com" target="blank">postman</a>
-<a href="https://hoppscotch.io" target="blank">hoppscotch</a>
-</ul>
+<li>tools request web api / serviss : </li><a href="https://www.postman.com" target="blank">postman</a> & <a href="https://hoppscotch.io" target="blank">hoppscotch</a>
 </ul>
 
 </ol>
