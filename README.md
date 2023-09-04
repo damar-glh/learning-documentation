@@ -29,7 +29,7 @@
 <li>tools request web api / serviss</li>
 <ul>
 <li>postman : <a>https://www.postman.com</a></li>
-<li>hoppscotch: <a>https://hoppscotch.io</a></li>
+<a>https://hoppscotch.io</a>
 </ul>
 </ul>
 
