@@ -29,6 +29,7 @@
 <li>tools request web api / serviss : <a href="https://www.postman.com" target="blank">postman</a> & <a href="https://hoppscotch.io" target="blank">hoppscotch</a></li>
 <li>http verb / http method</li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_blank">http response status codes</a></li>
+<li>base url & query string web api : <a href="https://www.tvmaze.com/api" target="blank">tvmaze</a></li>
 </ul>
 
 </ol>
