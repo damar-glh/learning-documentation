@@ -28,6 +28,7 @@
 </ul>
 <li>tools request web api / serviss : </li><a href="https://www.postman.com" target="blank">postman</a> & <a href="https://hoppscotch.io" target="blank">hoppscotch</a>
 <li>http verb / http method</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_blank">http response status codes</a></li>
 </ul>
 
 </ol>
