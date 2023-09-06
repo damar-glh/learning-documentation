@@ -31,7 +31,7 @@
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_blank">http response status codes</a></li>
 <li>base url & query string web api : <a href="https://www.tvmaze.com/api" target="blank">tvmaze</a></li>
 <li>data in http header : <a href="https://icanhazdadjoke.com/api" target="blank">icanhazdadjoke</a></li>
-<li>Xmlhttprequest</li>
+<li>Xmlhttprequest : request with js itself (not using tools)</li>
 </ul>
 
 </ol>
