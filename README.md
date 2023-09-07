@@ -32,6 +32,7 @@
 <li>base url & query string web api : <a href="https://www.tvmaze.com/api" target="blank">tvmaze</a></li>
 <li>data in http header : <a href="https://icanhazdadjoke.com/api" target="blank">icanhazdadjoke</a></li>
 <li>Xmlhttprequest : request with js itself (not using tools)</li>
+<li>request with fetch in js (try & catch)</li>
 </ul>
 
 </ol>
