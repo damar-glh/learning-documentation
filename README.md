@@ -33,6 +33,7 @@
 <li>data in http header : <a href="https://icanhazdadjoke.com/api" target="blank">icanhazdadjoke</a></li>
 <li>Xmlhttprequest : request with js itself (not using tools)</li>
 <li>request with fetch in js (try & catch)</li>
+<li>request with library axios in js (try & catch) : <a href="https://github.com/axios/axios">axios</a></li>
 </ul>
 
 </ol>
