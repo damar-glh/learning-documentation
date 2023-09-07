@@ -51,6 +51,14 @@ const loadPeople = async () => {
 	} catch (error) {
 		console.log('error', error)
 	}
+
+	try {
+		const res2 = await fetch('https://swapi.dev/api/people/4');
+		const data2 = await res2.json();
+		console.log(data2);
+	} catch (error) {
+		console.log('error', error)
+	}
 }
 
 loadPeople();
