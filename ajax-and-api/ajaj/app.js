@@ -52,3 +52,5 @@ const loadPeople = async () => {
 		console.log('error', error)
 	}
 }
+
+loadPeople();
