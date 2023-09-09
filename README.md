@@ -35,6 +35,7 @@
 <li>request with fetch in js (try & catch)</li>
 <li>request with library axios in js (try & catch) : <a href="https://github.com/axios/axios">axios</a></li>
 <li>add data headers request using axios : <a href="https://icanhazdadjoke.com">icanhazdadjoke</a></li>
+<li>case studied using axios & tvmaze : <a href="https://github.com/axios/axios">axios</a> & <a href="https://www.tvmaze.com/api#show-search">tvmaze</a></li>
 </ul>
 
 </ol>
