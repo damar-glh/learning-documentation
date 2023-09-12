@@ -17,6 +17,7 @@
 <li>call stack function : <a href="https://pythontutor.com/" target="blank"> visualizing code execution</a></li>
 <li>Javascript is a single thread, not multi thread</li>
 <li>callback hell in javascript makes it scary</li>
+<li>request with callback</li>
 <li>
 </ul>
 
