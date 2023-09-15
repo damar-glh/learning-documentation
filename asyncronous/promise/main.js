@@ -26,6 +26,7 @@ const requestPromise = (url) => {
 
 // promise harus dimasukan pada suatu variable agar tidak pendding
 let request = requestPromise('google.com');
+console.log(request);
 
 // callback hell
 // requestCallback('movie.com', function(response){
