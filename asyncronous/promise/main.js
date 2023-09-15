@@ -24,9 +24,12 @@ const requestPromise = (url) => {
 	});
 };
 
-// promise harus dimasukan pada suatu variable agar tidak pendding
-let request = requestPromise('google.com');
-console.log(request);
+// panggil request promise 
+requestPromise('movie.com').then((response) => {
+	console.log('success', response);
+}).catch((err) => {
+	console.log('error', err);
+});
 
 // callback hell
 // requestCallback('movie.com', function(response){
