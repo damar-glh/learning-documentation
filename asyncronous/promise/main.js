@@ -24,7 +24,7 @@ const requestPromise = (url) => {
 	});
 };
 
-// panggil request promise 
+// panggil request promise namun bisa terjadi callback hell
 requestPromise('movie.com').then((response) => {
 	console.log('success', response);
 }).catch((err) => {
