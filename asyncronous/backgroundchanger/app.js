@@ -1,3 +1,4 @@
+// cara membuat promise yang benar
 const delayedColorChange = (color, delay) => {
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
@@ -7,6 +8,7 @@ const delayedColorChange = (color, delay) => {
     })
 }
 
+// pemanggilan promise
 // delayedColorChange('red', 1000)
 //     .then(() => delayedColorChange('yellow', 1000))
 //     .then(() => delayedColorChange('green', 1000))
