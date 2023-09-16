@@ -23,7 +23,6 @@
 <li>how to create promise</li>
 <li>async Keyword function</li>
 <li>handler error async await: try and catch</li>
-<li>
 </ul>
 
 <li>AJAX (Asynchronous JS and Xml)
