@@ -31,6 +31,24 @@ requestPromise('movie.com').then((response) => {
 	console.log('error', err);
 });
 
+// panggil request promise tanpa terjadi callback hell
+requestPromise('movie.com').then((result) => {
+	console.log('page 1');
+	console.log(result);
+	return requestPromise('movie.com');
+}).then(() => {
+	console.log('page 2');
+	console.log(result);
+	return requestPromise('movie.com');
+}).then((result) => {
+	console.log('page 3');
+	console.assert(result);
+	return requestPromise('movie.com');
+}).catch((err) => {
+	console.log('error');
+});
+
+
 // callback hell
 // requestCallback('movie.com', function(response){
 //     console.log('It work.', response);
