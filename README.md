@@ -19,6 +19,7 @@
 <li>callback hell in javascript makes it scary</li>
 <li>request with callback</li>
 <li>request with promise</li>
+<li>effective request with promise</li>
 <li>
 </ul>
 
