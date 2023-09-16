@@ -20,6 +20,7 @@
 <li>request with callback</li>
 <li>request with promise</li>
 <li>effective request with promise</li>
+<li>how to create promise</li>
 <li>
 </ul>
 
