@@ -28,6 +28,8 @@ async function changeColor() {
     return 'all done'
 }
 
+
+// handle async await function
 changeColor().then((res) => alert(res));
 
 async function printRainbow() {
