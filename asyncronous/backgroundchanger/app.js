@@ -5,6 +5,9 @@ const delayedColorChange = (color, delay) => {
             document.body.style.backgroundColor = color;
             resolve();
         }, delay);
+        reject((err) => {
+            console.log(err);
+        })
     })
 }
 
