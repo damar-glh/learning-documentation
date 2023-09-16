@@ -21,6 +21,7 @@ const delayedColorChange = (color, delay) => {
 //     .then(() => delayedColorChange('white', 1000))
 //     .then(() => delayedColorChange('black', 1000))
 
+// keyword async and await function
 async function changeColor() {
     await delayedColorChange('red', 1000); //keyword await
     await delayedColorChange('yellow', 1000)
