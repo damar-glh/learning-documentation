@@ -21,6 +21,7 @@
 <li>request with promise</li>
 <li>effective request with promise</li>
 <li>how to create promise</li>
+<li>async Keyword function</li>
 <li>
 </ul>
 
