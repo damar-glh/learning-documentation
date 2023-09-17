@@ -46,5 +46,10 @@
 <li>case studied using axios & tvmaze : <a href="https://github.com/axios/axios">axios</a> & <a href="https://www.tvmaze.com/api#show-search">tvmaze</a></li>
 </ul>
 
+<li>Object Oriented Programming (OOP)
+<ul>
+<li>prototype in javascript : <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes">object-prototype</a>, example : <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">prototype-array</a></li>
+</ul>
+
 </ol>
 <h6> --- damaraaa. ☔<h6>
