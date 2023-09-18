@@ -50,6 +50,7 @@
 <ul>
 <li>prototype in javascript : <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes">object-prototype</a>, example : <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">prototype-array</a></li>
 <li><a href="https://www.geeksforgeeks.org/what-are-factory-functions-in-javascript/">factory function</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor">constructor function</a></li>
 </ul>
 
 </ol>
