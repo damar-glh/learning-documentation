@@ -43,7 +43,7 @@ class Color {
 
     opposite(){
         const {h, s, l} = this;
-        const newHue = (h - 180) % 360;
+        const newHue = (h + 180) % 360;
         return `hsl(${newHue}, ${s}, ${l}%)`;
     }
 
