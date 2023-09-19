@@ -31,6 +31,11 @@ class Color {
         return `rgba(${this.innerRGB()}, ${a})`;
     }
 
+    hsl() {
+        const {h, s, l} = this;
+        return `hsl(${h}, ${s}, ${l}%)`;
+    }
+
     calcHSL(){
         let {r, g, b} = this;
         // Buatlah r, g, dan b pecahan dari 1
