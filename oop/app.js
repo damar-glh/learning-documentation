@@ -41,6 +41,12 @@ class Color {
         return `hsl(${h}, 100%, ${l}%)`;
     }
 
+    opposite(){
+        const {h, s, l} = this;
+        const newHue = (h - 180) % 360;
+        return `hsl(${newHue}, ${s}, ${l}%)`;
+    }
+
     calcHSL(){
         let {r, g, b} = this;
         // Buatlah r, g, dan b pecahan dari 1
