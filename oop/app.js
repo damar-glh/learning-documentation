@@ -36,6 +36,11 @@ class Color {
         return `hsl(${h}, ${s}, ${l}%)`;
     }
 
+    fullySaturated(){
+        const {h, s, l} = this;
+        return `hsl(${h}, 100%, ${l}%)`;
+    }
+
     calcHSL(){
         let {r, g, b} = this;
         // Buatlah r, g, dan b pecahan dari 1
