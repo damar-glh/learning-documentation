@@ -1,3 +1,4 @@
+// menggunakan class mempermudah agar ketika menambahkan method tidak harus melalui prototype
 class Color {
     // constructor adalah function yang pertama kali dijalankan saat class dipanggil
     constructor(r, g, b, name) {
@@ -7,13 +8,17 @@ class Color {
         this.name = name;
     }
 
+    innerRGB(){
+        const {r, g, b} = this;
+        return `rgb(${r}, ${g}, ${b})`;
+    }
+
     colorName(){
         console.log('The color name is ' + this.name);
     }
 
     rgb() {
-        const {r, g, b} = this;
-        return `rgb(${r}, ${g}, ${b})`;
+        return `rgb(${this.innerRGB()})`;
     }
 
     hex() {
@@ -22,8 +27,7 @@ class Color {
     }
 
     rgba(a = 1.0){
-        const {r, g, b} = this;
-        return `rgba(${r}, ${g}, ${b}, ${a})`;
+        return `rgba(${this.innerRGB()}, ${a})`;
     }
 }
 
