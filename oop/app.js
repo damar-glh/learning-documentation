@@ -93,3 +93,5 @@ class Color {
 
 // buat object dengan class , dengan kata kunci new 
 const skyColor = new Color(185, 243, 252, 'sky');
+document.body.style.backgroundColor = skyColor.fullySaturated();
+document.body.style.backgroundClip = skyColor.opposite();
