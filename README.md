@@ -52,6 +52,7 @@
 <li><a href="https://www.geeksforgeeks.org/what-are-factory-functions-in-javascript/">factory function</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor">constructor function</a></li>
 <li>object with class</li>
+<li>polimorphism and inheritance: keyword extend and super</li>
 </ul>
 
 </ol>
