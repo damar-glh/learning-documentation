@@ -55,5 +55,10 @@
 <li>polimorphism and inheritance: keyword extend and super</li>
 </ul>
 
+<li>Jquery 
+<ul>
+<li>jqury selector</li>
+</ul>
+
 </ol>
 <h6> --- damaraaa. ☔<h6>
