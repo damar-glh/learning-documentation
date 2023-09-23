@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Selector</title>
+</head>
+<body>
+    <h1>Kamu ingin pergi kemana ?</h1>
+    <ul class="location">
+        <li>Bandung</li>
+        <li>Surabaya</li>
+        <li>Jakarta</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptates autem sunt debitis facere inventore laboriosam voluptatum nesciunt asperiores dolor perferendis et, atque voluptatem mollitia odio officiis sapiente aliquam ullam!
+    Ipsa nemo vero minima sint, ut voluptatibus quos consequuntur. Placeat, necessitatibus aspernatur! Libero nostrum tenetur ipsum ipsam consequuntur voluptatum ex quibusdam dolore, consectetur laboriosam, eaque odio sit nemo temporibus vel!</p>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function() {
+            var jogja = $('<li>Yogyakarta</li>');
+            var bali = $('<li>Bali</li>');
+
+            var subJudul = $('<h2>Choice your destination now!</h2>');
+            
+            $('.location').append(jogja);
+            $('.location').append(bali);
+            $('.location').before(subJudul);
+        })
+    </script>
+</body>
+</html>
