@@ -57,7 +57,7 @@
 
 <li>Jquery 
 <ul>
-<li>jqury selector</li>
+<li>jqury selector : <a href="https://jquery.com">jquery</a></li>
 </ul>
 
 </ol>
