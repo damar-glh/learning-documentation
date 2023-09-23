@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Selector</title>
+</head>
+<body>
+    <h1 class="question">Kamu ingin pergi kemana ?</h1>
+    <ul>
+        <li id="amerika">Bandung</li>
+        <li>Surabaya</li>
+        <li>Jakarta</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptates autem sunt debitis facere inventore laboriosam voluptatum nesciunt asperiores dolor perferendis et, atque voluptatem mollitia odio officiis sapiente aliquam ullam!
+    Ipsa nemo vero minima sint, ut voluptatibus quos consequuntur. Placeat, necessitatibus aspernatur! Libero nostrum tenetur ipsum ipsam consequuntur voluptatum ex quibusdam dolore, consectetur laboriosam, eaque odio sit nemo temporibus vel!</p>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function() {
+            $('.question').text('Where are you go?');
+            $('#amerika').text('Amerika Serikat');
+            $('p').text('Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, voluptatem! Illo magni obcaecati inventore? Labore iste quaerat quas sequi omnis. Tempora corporis in, aliquid quo deserunt cumque excepturi enim dolore.');
+        })
+    </script>
+</body>
+</html>
