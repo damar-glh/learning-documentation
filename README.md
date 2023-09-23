@@ -59,6 +59,7 @@
 <ul>
 <li>jqury selector : <a href="https://jquery.com">jquery</a></li>
 <li>dom in jqury and manupulation</li>
+<li>event handler in jquery</li>
 </ul>
 
 </ol>
