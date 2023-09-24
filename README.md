@@ -60,6 +60,7 @@
 <li>jqury selector : <a href="https://jquery.com">jquery</a></li>
 <li>dom in jqury and manupulation</li>
 <li>event handler in jquery</li>
+<li><a href="https://api.jquery.com/category/effects/">fiture effect in jquery</a></li>
 </ul>
 
 </ol>
