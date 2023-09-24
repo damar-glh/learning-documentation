@@ -61,6 +61,7 @@
 <li>dom in jqury and manupulation</li>
 <li>event handler in jquery</li>
 <li><a href="https://api.jquery.com/category/effects/">fiture effect in jquery</a></li>
+<li>library jquery: <a href="https://jqueryui.com">jquery_ui</a>, <a href="http://kenwheeler.github.io/slick/">jquery_slick</a>, <a href="https://jquery.com">ext.</a></li>
 </ul>
 
 </ol>
