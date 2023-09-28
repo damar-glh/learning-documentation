@@ -67,6 +67,7 @@
 <li>Vue.js
 <ul>
 <li>reactive data in vue.js</li>
+<li>binding data in vue.js</li>
 </ul>
 
 </ol>
