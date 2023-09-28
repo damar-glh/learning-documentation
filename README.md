@@ -65,6 +65,7 @@
 </ul>
 
 <li>Vue.js
+<ul>
 <li>jqury selector : <a href=""></a></li>
 </ul>
 
