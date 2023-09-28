@@ -66,7 +66,7 @@
 
 <li>Vue.js
 <ul>
-<li>.<a href=""></a></li>
+<li>reactive data in vue.js</li>
 </ul>
 
 </ol>
