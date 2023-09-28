@@ -12,7 +12,8 @@
         <h2>{{ name }}</h2>
         <p>{{ description }}</p>
         <div class="h3">Rp.{{ price }}</div>
-        <img src="OIP.jpeg" alt="ROG Zephyrus G14 GA401">
+        <img class="img-fluid" v-bind:src="image" v-bind:alt="name">
+        <!-- <img :class="img-fluid" :src="image" :alt="name"> // bisa juga seperti ini -->
     </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
