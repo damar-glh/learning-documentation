@@ -64,5 +64,9 @@
 <li>library jquery: <a href="https://jqueryui.com">jquery_ui</a>, <a href="http://kenwheeler.github.io/slick/">jquery_slick</a>, <a href="https://jquery.com">ext.</a></li>
 </ul>
 
+<li>Vue.js
+<li>jqury selector : <a href=""></a></li>
+</ul>
+
 </ol>
 <h6> --- damaraaa. ☔<h6>
