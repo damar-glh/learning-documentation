@@ -8,12 +8,18 @@
 </head>
 <body class="">
 
-    <div id="app">
-        <h2>{{ name }}</h2>
-        <p>{{ description }}</p>
-        <div class="h3">Rp.{{ price }}</div>
-        <img class="img-fluid" v-bind:src="image" v-bind:alt="name">
-        <!-- <img :class="img-fluid" :src="image" :alt="name"> // bisa juga seperti ini -->
+    <div class="container" id="app">
+        <div class="row d-flex mb-3 align-items-center" v-for="item in product">
+            <div class="col-sm-4">
+                <img class="img-fluid" v-bind:src="item.image" v-bind:alt="item.name">
+                <!-- <img :class="img-fluid" :src="item.image" :alt="item.name"> // bisa juga seperti ini -->      
+            </div>
+            <div class="col">
+                <h2>{{ item.name }}</h2>
+                <p>{{ item.description }}</p>
+                <div class="h3">Rp.{{ item.price }}</div>
+            </div>
+        </div>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
