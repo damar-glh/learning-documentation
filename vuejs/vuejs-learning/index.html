@@ -10,14 +10,16 @@
 
     <div class="container" id="app">
         <div class="row d-flex mb-3 align-items-center" v-for="item in product">
-            <div class="col-sm-4">
-                <img class="img-fluid" v-bind:src="item.image" v-bind:alt="item.name">
-                <!-- <img :class="img-fluid" :src="item.image" :alt="item.name"> // bisa juga seperti ini -->      
-            </div>
-            <div class="col">
-                <h2>{{ item.name }}</h2>
-                <p>{{ item.description }}</p>
-                <div class="h3">Rp.{{ item.price }}</div>
+            <div v-if="item.price <= Number(priceMax)">
+                <div class="col-sm-4">
+                    <img class="img-fluid" v-bind:src="item.image" v-bind:alt="item.name">
+                    <!-- <img :class="img-fluid" :src="item.image" :alt="item.name"> // bisa juga seperti ini -->      
+                </div>
+                <div class="col">
+                    <h2>{{ item.name }}</h2>
+                    <p>{{ item.description }}</p>
+                    <div class="h3">Rp.{{ Number(item.price) }}.000.000</div>
+                </div>
             </div>
         </div>
     </div>
