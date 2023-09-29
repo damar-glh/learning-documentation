@@ -69,6 +69,7 @@
 <li>reactive data in vue.js</li>
 <li>binding data in vue.js : v-bin:</li>
 <li>iteration in vue.js : v-for:</li>
+<li>condition(if else) in vue.js: v-if</li>
 </ul>
 
 </ol>
