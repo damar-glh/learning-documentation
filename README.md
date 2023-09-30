@@ -70,6 +70,7 @@
 <li>binding data in vue.js : v-bin:</li>
 <li>iteration in vue.js : v-for:</li>
 <li>condition(if else) in vue.js: v-if</li>
+<li>handling data input in vue.js: v-model</li>
 </ul>
 
 </ol>
