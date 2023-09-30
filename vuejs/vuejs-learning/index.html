@@ -13,8 +13,8 @@
             <label for="" class="font-bold mr-2">Max</label>
             <input type="number" class="form-control w-25" v-model="priceMax">
         </div>
-        <input type="range" class="custom-range" min="0" max="100" v-model="priceMax">
-        <div class="row d-flex mb-3 align-items-center" v-for="item in product">
+        <input type="range" class="custom-range" min="0" max="200" v-model="priceMax">
+        <div class="row d-flex mb-3 align-items-center" v-for="item in products">
             <div v-if="item.price <= Number(priceMax)">
                 <div class="col-sm-4">
                     <img class="img-fluid" v-bind:src="item.image" v-bind:alt="item.name">
