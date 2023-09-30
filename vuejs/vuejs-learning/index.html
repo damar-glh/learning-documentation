@@ -24,6 +24,7 @@
         <div class="row d-flex mb-3 align-items-center" v-for="item in products">
             <div v-if="item.price <= Number(priceMax)">
                 <div class="col-1 m-auto">
+                    <button class="btn btn-danger" v-on:click="reduceItem(item)">-</button>
                     <button class="btn btn-info" v-on:click="addItem(item)">+</button>
                 </div>
                 <div class="col-sm-4">

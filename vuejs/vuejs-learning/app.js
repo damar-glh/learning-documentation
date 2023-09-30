@@ -15,6 +15,9 @@ let app = new Vue({
     methods: {
         addItem: function(product){
             this.cart.push(product);
+        },
+        reduceItem: function(product){
+            this.cart.pop(product);
         }
     },
 });
