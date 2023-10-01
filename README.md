@@ -73,6 +73,7 @@
 <li>handling data input in vue.js: v-model</li>
 <li><a href="https://vuejs.org/guide/essentials/lifecycle.html#lifecycle-diagram">lifecyle hooks in vue.js</a></li>
 <li>event and method in vue.js</li>
+<li>built in directives in vue.js: v-html</li>
 </ul>
 
 </ol>
