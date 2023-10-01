@@ -75,6 +75,7 @@
 <li>event and method in vue.js</li>
 <li><a href="https://vuejs.org/api/built-in-directives.html">built in directives in vue.js</a></li>
 <li>interpolation template: v-html & v-once</li>
+<li>computed property</li>
 </ul>
 
 </ol>
