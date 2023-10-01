@@ -28,7 +28,13 @@
                     <button class="btn btn-info" v-on:click="addItem(item)">+</button>
                 </div>
                 <div class="col-sm-4">
-                    <img class="img-fluid" v-bind:src="item.image" v-bind:alt="item.name">
+                    <!-- <img v-bind="{
+                        :class: "img-fluid",
+                        :src="item.image",
+                        :alt="item.name" 
+                    }"> -->
+                    <img :class="imgClass" :src="item.image" :alt="item.name">
+                    <!-- <img class="img-fluid" v-bind:src="item.image" v-bind:alt="item.name"> -->
                     <!-- <img :class="img-fluid" :src="item.image" :alt="item.name"> // bisa juga seperti ini -->      
                 </div>
                 <div class="col">

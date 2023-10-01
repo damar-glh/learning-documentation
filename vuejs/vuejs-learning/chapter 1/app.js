@@ -1,5 +1,6 @@
 let app = new Vue({
     el: '#app',
+    imgClass: 'img-fluid',
     data: {
         priceMax: 50,
         products: null,
