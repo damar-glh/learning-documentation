@@ -17,21 +17,21 @@
         <nav class="navbar navbar-light bg-light fixed-top">
             <div class="navbar-text ml-auto">
                 <b class="m-2">Cart:</b>
-                <span class="badge bg-danger">{{ cart.length }}</span>
+                <span class="badge bg-info">{{ cart.length }}</span>
             </div>
         </nav>
         <br>
         <br>
         <h1>My Shop</h1>
-        <div class="d-flex align-items-center">
+        <div class="align-items-center" :class="sliderState">
             <label for="" :class="style.label">Max</label>
-            <input type="number" class="form-control" :style="{'width': '60px', 'text-align': 'center'}" v-model="priceMax">
+            <input type="number" class="form-control" :style="{'width': style.InputWidth + 'px', 'text-align': 'center'}" v-model="priceMax">
             <input type="range" class="custom-range" min="0" max="200" v-model="priceMax">
         </div>
         <div class="row d-flex mb-3 align-items-center" v-for="item in products">
             <div v-if="item.price <= Number(priceMax)">
-                <div class="col-1 m-auto d-flex">
-                    <button class="btn btn-danger" v-on:click="reduceItem(item)">-</button>
+                <div class="col-1 d-flex">
+                    <button class="btn btn-danger mx-2" v-on:click="reduceItem(item)">-</button>
                     <button class="btn btn-info" v-on:click="addItem(item)">+</button>
                 </div>
                 <div class="col-sm-4">
