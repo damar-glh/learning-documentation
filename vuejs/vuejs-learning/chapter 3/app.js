@@ -6,7 +6,7 @@ let app = new Vue({
         cart: [],
         style: {
             label: ['font-weight-bold', 'mr-2'],
-            InputWidth: 60,
+            InputWidth: 80,
             sliderStatus: false,
         },
     },
