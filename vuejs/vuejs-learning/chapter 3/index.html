@@ -28,13 +28,17 @@
         <br>
         <br>
         <h1 class="mt-2">My Shop</h1>
-        <div v-if="style.sliderStatus">
-            <div class="align-items-center">
-                <label for="" :class="style.label">Max</label>
-                <input type="number" class="form-control" :style="{'width': style.InputWidth + 'px', 'text-align': 'center'}" v-model="priceMax">
-                <input type="range" class="custom-range" min="0" max="200" v-model="priceMax">
+        <transition name="fade">
+            <div v-if="style.sliderStatus">
+                <div v-if="style.sliderStatus">
+                    <div class="align-items-center d-flex">
+                        <label for="" :class="style.label">Max</label>
+                        <input type="number" class="form-control" :style="{'width': style.InputWidth + 'px', 'text-align': 'center'}" v-model="priceMax">
+                        <input type="range" class="custom-range" min="0" max="200" v-model="priceMax">
+                    </div>
+                </div>
             </div>
-        </div>
+        </transition>
         <div class="row d-flex mb-3 align-items-center" v-for="item in products">
             <div v-if="item.price <= Number(priceMax)">
                 <div class="col-1 d-flex">
