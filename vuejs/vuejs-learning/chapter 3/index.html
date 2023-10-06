@@ -27,7 +27,7 @@
         </nav>
         <br>
         <br>
-        <h1 class="mt-1 ">My Shop</h1>
+        <h1 class="mt-2">My Shop</h1>
         <transition name="custom" enter-active-class="animated fadeInDown" leave-active-class="animated slideOutRight">
             <div v-if="style.sliderStatus">
                 <div v-if="style.sliderStatus">
@@ -39,11 +39,11 @@
                 </div>
             </div>
         </transition>
-        <transition-group name="fade" tag="div" enter-active-class="animated fadeInRight" leave-active-class="animated slideOutLeft">
-            <div class="" v-for="(item, index) in products" :key="item.id">
-                <div v-if="item.price <= Number(priceMax)" class="d-flex mt-1">
-                    <div class="col-2 d-table">
-                        <button class="btn btn-danger mx-2" v-on:click="reduceItem(item)">-</button>
+        <transition-group name="fade" tag="div" @before-Enter="before" @enter="enter" @leave="leave">
+            <div class="d-none" v-for="(item, index) in products" :key="item.id" :data-index="index">
+                <div v-if="item.price <= Number(priceMax)">
+                    <div class="col-1 d-flex">
+                        <!-- <button class="btn btn-danger mx-2" v-on:click="reduceItem(item)">-</button> -->
                         <button class="btn btn-info" v-on:click="addItem(item)">+</button>
                     </div>
                     <div class="col-sm-4">
