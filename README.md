@@ -76,7 +76,7 @@
 <li><a href="https://vuejs.org/api/built-in-directives.html">built in directives in vue.js</a></li>
 <li>interpolation template: v-html & v-once</li>
 <li>computed property</li>
-<li>binding attributes to arrays and objects</li>
+<li>set the css style on vue.js</li>
 <li>property filters</li>
 </ul>
 
