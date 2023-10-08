@@ -77,6 +77,7 @@
 <li>interpolation template: v-html & v-once</li>
 <li>computed property</li>
 <li>binding attributes to arrays and objects</li>
+<li>property filters</li>
 </ul>
 
 </ol>
