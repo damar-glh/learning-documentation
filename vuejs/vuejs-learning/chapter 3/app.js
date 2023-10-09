@@ -46,11 +46,38 @@ let app = new Vue({
                 el.className = 'animated fadeOutRight';
             }, delay);
         },
-        addItem: function(product){
-            this.cart.push(product);
+        addItem: function(product, qty) {
+            let productIndex;
+            let productExist = this.cart.filter(function(item, index) {
+                if (item.product.id == Number(product.id)) {
+                    productIndex = index;
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+            if (productExist.length) {
+                this.cart[productIndex].qty++;
+            } else {
+                this.cart.push({ product: product, qty: 1 });
+            }
         },
+        
         reduceItem: function(product){
-            this.cart.pop(product);
+            let productIndex = -1;
+            for (let i = 0; i < this.cart.length; i++) {
+                if (this.cart[i].product.id === product.id) {
+                    productIndex = i;
+                    break;
+                }
+            }
+            if (productIndex !== -1) {
+                if (this.cart[productIndex].qty > 1) {
+                    this.cart[productIndex].qty--;
+                } else {
+                    this.cart.splice(productIndex, 1);
+                }
+            }
         }
     },
 });
