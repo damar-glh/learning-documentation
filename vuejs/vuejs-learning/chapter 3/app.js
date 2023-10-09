@@ -35,13 +35,13 @@ let app = new Vue({
             el.className = 'd-none';
         },
         enter: function(el){
-            var delay = el.dataset.index * 100;
+            let delay = el.dataset.index * 100;
             setTimeout(function(){
                 el.className = 'animated fadeInRight';
             }, delay);
         },
         leave: function(el){
-            var delay = el.dataset.index * 100;
+            let delay = el.dataset.index * 100;
             setTimeout(function(){
                 el.className = 'animated fadeOutRight';
             }, delay);
