@@ -46,7 +46,7 @@ let app = new Vue({
                 el.className = 'animated fadeOutRight';
             }, delay);
         },
-        addItem: function(product, qty) {
+        addItem: function(product) {
             let productIndex;
             let productExist = this.cart.filter(function(item, index) {
                 if (item.product.id == Number(product.id)) {
