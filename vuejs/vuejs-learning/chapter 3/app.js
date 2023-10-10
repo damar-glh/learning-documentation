@@ -77,20 +77,11 @@ let app = new Vue({
             }
         },
         
-        reduceItem: function(product){
-            let productIndex = -1;
-            for (let i = 0; i < this.cart.length; i++) {
-                if (this.cart[i].product.id === product.id) {
-                    productIndex = i;
-                    break;
-                }
-            }
-            if (productIndex !== -1) {
-                if (this.cart[productIndex].qty > 1) {
-                    this.cart[productIndex].qty--;
-                } else {
-                    this.cart.splice(productIndex, 1);
-                }
+        deleteItem: function(key){
+            if(this.cart[key].qty > 1){
+                this.cart[key].qty--;
+            } else {
+                this.cart.splice(key, 1);
             }
         }
     },
