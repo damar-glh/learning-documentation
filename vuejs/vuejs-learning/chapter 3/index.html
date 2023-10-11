@@ -82,7 +82,9 @@
                         <div class="col">
                             <h2 class="text-info">{{ item.name }}</h2>
                             <p class="mb-0 text-justify">{{ item.description }}</p>
-                            <div class="h5 float-start">{{ Number(item.price) | currencyFormat }}</div>
+                            <div class="h5 float-start">
+                                <price></price>
+                            </div>
                         </div>
                     </div>
                 </div>
