@@ -41,7 +41,7 @@ Vue.component('product-list', {
                 <div class="container">
                     <div v-if="item.price <= Number(maximum)" class="mt-3">
                         <div class="col-1 d-flex">
-                            <button class="btn btn-success text-white" v-on:click="addItem(item)">+</button>
+                            <button class="btn btn-success text-white" @click="$emit('add', item)">+</button>
                         </div>
                         <div class="col-sm-4">
                             <!-- <img v-bind="{
