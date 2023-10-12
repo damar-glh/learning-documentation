@@ -16,10 +16,61 @@ Vue.component('price', {
     template: '<span>{{ this.prefix + Number.parseFloat(this.value).toFixed(this.precision) }}</span>'
 });
 
+Vue.component('product-list', {
+    props: ['products', 'maximum'],
+    methods: {
+        before: function(el){
+            el.className = 'd-none';
+        },
+        enter: function(el){
+            let delay = el.dataset.index * 100;
+            setTimeout(function(){
+                el.className = 'animated fadeInRight';
+            }, delay);
+        },
+        leave: function(el){
+            let delay = el.dataset.index * 100;
+            setTimeout(function(){
+                el.className = 'animated fadeOutRight';
+            }, delay);
+        },
+    },
+    template: `
+    <transition-group name="fade" tag="div" @before-Enter="before" @enter="enter" @leave="leave" >
+            <div class="d-none " v-for="(item, index) in products" :key="item.id" :data-index="index">
+                <div class="container">
+                    <div v-if="item.price <= Number(maximum)" class="mt-3">
+                        <div class="col-1 d-flex">
+                            <button class="btn btn-success text-white" v-on:click="addItem(item)">+</button>
+                        </div>
+                        <div class="col-sm-4">
+                            <!-- <img v-bind="{
+                                :class: "img-fluid",
+                                :src="item.image",
+                                :alt="item.name" 
+                            }"> -->
+                            <img :src="item.image" :alt="item.name" class="img-fluid d-block">
+                            <!-- <img class="img-fluid" v-bind:src="item.image" v-bind:alt="item.name"> -->
+                            <!-- <img :class="img-fluid" :src="item.image" :alt="item.name"> // bisa juga seperti ini -->      
+                        </div>
+                        <div class="col">
+                            <h2 class="text-info">{{ item.name }}</h2>
+                            <p class="mb-0 text-justify">{{ item.description }}</p>
+                            <div class="h5 float-start">
+                                <price :value="Number(item.price)" :prefix="'$'" :precision="3"></price>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </transition-group>
+    `,
+});
+
 let app = new Vue({
     el: '#app',
     data: {
-        priceMax: 50,
+        maximum : 50,
         products: null,
         cart: [],
         style: {
@@ -63,21 +114,6 @@ let app = new Vue({
     },
 
     methods: {
-        before: function(el){
-            el.className = 'd-none';
-        },
-        enter: function(el){
-            let delay = el.dataset.index * 100;
-            setTimeout(function(){
-                el.className = 'animated fadeInRight';
-            }, delay);
-        },
-        leave: function(el){
-            let delay = el.dataset.index * 100;
-            setTimeout(function(){
-                el.className = 'animated fadeOutRight';
-            }, delay);
-        },
         addItem: function(product) {
             let productIndex;
             let productExist = this.cart.filter(function(item, index) {
