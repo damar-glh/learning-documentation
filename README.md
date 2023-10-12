@@ -79,6 +79,7 @@
 <li>set the css style on vue.js</li>
 <li>property filters</li>
 <li>components on vue.js</li>
+<li>props on Vuejs</li>
 </ul>
 
 </ol>
