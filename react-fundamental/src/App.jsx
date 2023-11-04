@@ -4,7 +4,7 @@ import Article from '../src/components/Article';
 function App() {
   return (
     <>
-      <Article />
+      <Article name="Damaraaa" titles={["ReactJs", "NextJs"]}/>
     </>
   )
 }
