@@ -1,10 +1,10 @@
 import './App.css'
-import Article from '../src/components/Article';
+import HomePage from './pages/index'
 
 function App() {
   return (
     <>
-      <Article name="Damaraaa" titles={["ReactJs", "NextJs"]}/>
+      <HomePage />
     </>
   )
 }

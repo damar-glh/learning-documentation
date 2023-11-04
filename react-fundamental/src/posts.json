@@ -1,0 +1,20 @@
+[
+    {
+        "id" : "1",
+        "title": "Tutorial belajar reactjs lengkap",
+        "tags" : ["react", "frontend"],
+        "date" : "2023-11-01"
+    },
+    {
+        "id" : "2",
+        "title": "Meningkatkan performa reactjs",
+        "tags" : ["react", "frontend"],
+        "date" : "2023-11-02"
+    },
+    {
+        "id" : 3,
+        "title": "Stylign pada reactjs",
+        "tags" : ["react", "frontend"],
+        "date" : "2023-11-03"
+    }
+]

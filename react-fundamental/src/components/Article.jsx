@@ -2,17 +2,11 @@
 function Article (props) {
     return (
         <>
-            <div>{props.name}</div>
-            <div>
-                {props.titles.map((title) => {
-                    return (
-                        <>
-                            <div>{title}</div>
-                            <div>{title}</div>
-                        </>
-                    )
-                })}
-            </div>
+            <h1>{props.id}</h1>
+            <div>{props.title}</div>
+            <small>Tags:{props.tags}</small>
+            <br />
+            <small>Date:{props.date}</small>
         </>
     )
 }
