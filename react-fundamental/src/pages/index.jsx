@@ -1,21 +1,31 @@
-import { useState } from 'react';
-import posts from '../posts.json'
-import Article from '../components/Article'
+import { useMemo, useState } from 'react';
+import rawPosts from '../posts.json';
+import Article from '../components/Article';
+import Search from '../components/Search';
 
 function HomePage(){
-    const [search, setSearch] = useState("")
+    const [search,setSearch] = useState("");
 
-    const changeSearch = (event) => {
+    const handleSearch = (event) => {
+        event.preventDefault();
         setSearch(event.target.value);
     }
+
+    const posts = useMemo(() => {
+        return rawPosts.filter(({title}) => title.includes(search))
+    }, [search])
 
     return (
         <>
             <h1>Simple Blog</h1>
-            <div className="">Cari Artikel : <input type="text" onChange={changeSearch} />{" "}</div>
+            <Search handleSearch={handleSearch} />
             <small>Data yang anda cari adalah {search}</small>
-            {posts.map(({id, title, tags, date}) => (
-                <Article key={id} {...{id, title, tags, date}} />
+            {posts.length === 0 ? (
+                <div>
+                    <h2>Postingan yang anda cari tidak ada</h2>
+                </div>
+            ) : posts.map((post) => (
+                <Article key={post.id} {...post} />
             ))}
         </>
     )
