@@ -5,21 +5,24 @@ import Search from '../components/Search';
 
 function HomePage(){
     const [search,setSearch] = useState("");
+    const [totalPost, setTotalPost] = useState(0);
+
+    const posts = useMemo(() => {
+        const filteredPosts = rawPosts.filter(({title}) => title.includes(search));
+        setTotalPost(filteredPosts.length);
+        return filteredPosts;
+    }, [search])
 
     const handleSearch = (event) => {
         event.preventDefault();
         setSearch(event.target.value);
     }
 
-    const posts = useMemo(() => {
-        return rawPosts.filter(({title}) => title.includes(search))
-    }, [search])
-
     return (
         <>
             <h1>Simple Blog</h1>
-            <Search handleSearch={handleSearch} />
-            <small>Data yang anda cari adalah {search}</small>
+            <Search handleSearch={handleSearch} totalPost={totalPost} />
+            <small>{totalPost} Data yang anda cari adalah {search}</small>
             {posts.length === 0 ? (
                 <div>
                     <h2>Postingan yang anda cari tidak ada</h2>
