@@ -2,7 +2,9 @@
 function Search({handleSearch}){
     return (
         <>
-            <div className="">Cari Artikel : <input type="text" onChange={handleSearch} />{" "}</div>
+            <div className="">Cari Artikel : <input type="text" onChange={handleSearch} />{" "}
+            <button>Cari Sekarang</button>
+            </div>
         </>
     )
 

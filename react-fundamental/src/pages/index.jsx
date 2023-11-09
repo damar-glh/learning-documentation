@@ -22,7 +22,7 @@ function HomePage(){
         <>
             <h1>Simple Blog</h1>
             <Search handleSearch={handleSearch} totalPost={totalPost} />
-            <small>Ditemukan {totalPost} Data yang anda cari yaitu {search}</small>
+            <small>Ditemukan {totalPost} Data yang anda cari yaitu {search} sebagai berikut : </small>
             {posts.length === 0 ? (
                 <div>
                     <h2>Postingan yang anda cari tidak ada</h2>
