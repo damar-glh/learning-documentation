@@ -3,18 +3,21 @@
         "id" : "1",
         "title": "Tutorial belajar reactjs lengkap",
         "tags" : ["react", "frontend"],
-        "date" : "2023-11-01"
+        "date" : "2023-11-01",
+        "isNew": true
     },
     {
         "id" : "2",
         "title": "Meningkatkan performa reactjs",
         "tags" : ["react", "frontend"],
-        "date" : "2023-11-02"
+        "date" : "2023-11-02",
+        "isNew": false
     },
     {
         "id" : 3,
         "title": "Stylign pada reactjs",
         "tags" : ["react", "frontend"],
-        "date" : "2023-11-03"
+        "date" : "2023-11-03",
+        "isNew": false
     }
 ]
