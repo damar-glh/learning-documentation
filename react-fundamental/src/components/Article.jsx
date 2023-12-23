@@ -1,23 +1,25 @@
-const ArticleStatus = ({isNew}) => {
-    return isNew && <span>-- New Article</span>
+import { useContext } from "react";
+import { GlobalContext } from "../context";
+
+const ArticleStatus = ({ isNew }) => {
+  return isNew && <span>-- Baru !!!</span>;
+};
+
+function Article(props) {
+  const user = useContext(GlobalContext);
+
+  return (
+    <>
+      <h3>{props.title}</h3>
+      <small>
+        Date : {props.date}, tags: {props.tags.join(", ")}{" "}
+        <ArticleStatus isNew={props.isNew} />
+      </small>
+      <div>
+        <smal>Ditulis oleh {user.username}</smal>
+      </div>
+    </>
+  );
 }
 
-const NewArticle = () => {
-    return <span>-- New Article</span>
-}
-
-function Article (props) {
-    return (
-        <>
-            <h1>{props.id}</h1>
-            <div>{props.title}</div>
-            <small>Tags:{props.tags}</small>
-            <br />
-            <small>Date:{props.date}</small>
-            <ArticleStatus isNew={props.isNew}/>
-            {props.isNew && <NewArticle />}
-        </>
-    )
-}
-
-export default Article
+export default Article;
