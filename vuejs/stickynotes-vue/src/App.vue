@@ -22,6 +22,13 @@
         </div>
       </div>
     </div>
+    <div class="form-overlay">
+      <div class="form-modal">
+        <button class="form-close-btn">&times;</button>
+        <textarea name="memo" id="memo" cols="30" rows="10"></textarea>
+        <button class="form-submit-btn">Add</button>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -75,5 +82,60 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.77);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-modal {
+  width: 420px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #495a7d;
+}
+
+.form-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  color: #495a7d;
+  background-color: transparent;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.form-submit-btn {
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #495a7d;
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
 }
 </style>
