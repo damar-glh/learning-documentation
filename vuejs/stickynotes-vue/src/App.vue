@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import {ref} from 'vue';
 
 const showForm = ref(false);
 const NewMemo = ref(" ");
@@ -10,6 +10,7 @@ const addMemo = () => {
     id: Date.now(),
     memo: NewMemo.value,
     date: new Date().toLocaleDateString(),
+    time: new Date().toLocaleTimeString(),
     backgroundColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
   })
   NewMemo.value = " ";
@@ -19,22 +20,24 @@ const addMemo = () => {
 
 <template>
   <main>
-    {{ memos }}
     <div class="container">
       <header>
         <h1 class="header-title">Memo</h1>
         <button @click="showForm = true" class="header-button">add +</button>
       </header>
       <div class="card-container">
-        <div class="card">
+        <div v-for="memo in memos" class="card" :style="{backgroundColor: memo.backgroundColor}">
           <p class="card-content">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
+            {{ memo.memo }}
           </p>
-          <p class="card-date">
-            12/12/2024
-          </p>
+          <div class="card-dt">
+            <p>
+              {{ memo.date }}
+            </p>
+            <p>
+              {{ memo.time }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -92,11 +95,17 @@ header {
 .card {
   width: 225px;
   height: 225px;
-  padding: 10px;
-  background-color: #ffa6c1;
+  padding: 15px;
+  border-radius: 5px;
   margin-bottom: 20px;
+  background-color: aquamarine;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-dt {
+  display: flex;
   justify-content: space-between;
 }
 
