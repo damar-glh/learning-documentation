@@ -2,10 +2,24 @@
 import { ref } from 'vue';
 
 const showForm = ref(false);
+const NewMemo = ref(" ");
+const memos = ref([]);
+
+const addMemo = () => {
+  memos.value.push({
+    id: Date.now(),
+    memo: NewMemo.value,
+    date: new Date().toLocaleDateString(),
+    backgroundColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
+  })
+  NewMemo.value = " ";
+  showForm.value = false;
+};
 </script>
 
 <template>
   <main>
+    {{ memos }}
     <div class="container">
       <header>
         <h1 class="header-title">Memo</h1>
@@ -27,8 +41,8 @@ const showForm = ref(false);
     <div v-show="showForm" class="form-overlay">
       <div class="form-modal">
         <button @click="showForm = false" class="form-close-btn">&times;</button>
-        <textarea name="memo" id="memo" cols="30" rows="10"></textarea>
-        <button class="form-submit-btn">Add</button>
+        <textarea v-model="NewMemo" name="memo" id="memo" cols="30" rows="10"></textarea>
+        <button @click="addMemo" class="form-submit-btn">Add</button>
       </div>
     </div>
   </main>
