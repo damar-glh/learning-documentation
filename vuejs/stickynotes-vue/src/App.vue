@@ -1,5 +1,7 @@
 <script setup>
+import { ref } from 'vue';
 
+const showForm = ref(false);
 </script>
 
 <template>
@@ -7,7 +9,7 @@
     <div class="container">
       <header>
         <h1 class="header-title">Memo</h1>
-        <button class="header-button">add +</button>
+        <button @click="showForm = true" class="header-button">add +</button>
       </header>
       <div class="card-container">
         <div class="card">
@@ -22,9 +24,9 @@
         </div>
       </div>
     </div>
-    <div class="form-overlay">
+    <div v-show="showForm" class="form-overlay">
       <div class="form-modal">
-        <button class="form-close-btn">&times;</button>
+        <button @click="showForm = false" class="form-close-btn">&times;</button>
         <textarea name="memo" id="memo" cols="30" rows="10"></textarea>
         <button class="form-submit-btn">Add</button>
       </div>
