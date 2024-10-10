@@ -12,17 +12,20 @@ const addMemo = () => {
     errorMessages.value = "Please enter a memo"
     return;
   }
+
+  const memoData = {
+    memo: NewMemo.value,
+    date: new Date().toLocaleDateString(),
+    time: new Date().toLocaleDateString()
+  }
+
   if (editMemoId.value !== null) {
     const memo = memos.value.find((memo) => memo.id === editMemoId.value);
-    memo.memo = NewMemo.value;
-    memo.date =new Date().toLocaleDateString();
-    memo.time = new Date().toLocaleTimeString();
+    Object.assign(memo, memoData)
   } else {
     memos.value.push({
       id: Date.now(),
-      memo: NewMemo.value,
-      date: new Date().toLocaleDateString(),
-      time: new Date().toLocaleTimeString(),
+      ...memoData,
       backgroundColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
     })
   }
@@ -37,9 +40,11 @@ const deleteMemo = (id) => {
 
 const editMemo = (id) => {
   const memo = memos.value.find((memo) => memo.id === id);
-  NewMemo.value = memo.memo;
-  showForm.value = true;
-  editMemoId.value = id;
+  if (memo) {
+    NewMemo.value = memo.memo;
+    showForm.value = true;
+    editMemoId.value = id;
+  }
 }
 </script>
 
