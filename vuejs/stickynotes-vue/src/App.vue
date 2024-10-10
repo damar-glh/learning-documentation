@@ -26,7 +26,7 @@ const addMemo = () => {
         <button @click="showForm = true" class="header-button">add +</button>
       </header>
       <div class="card-container">
-        <div v-for="memo in memos" class="card" :style="{backgroundColor: memo.backgroundColor}">
+        <div v-for="memo in memos" class="card" :key="memo.id" :style="{backgroundColor: memo.backgroundColor}">
           <p class="card-content">
             {{ memo.memo }}
           </p>
