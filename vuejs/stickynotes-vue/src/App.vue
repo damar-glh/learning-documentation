@@ -2,10 +2,15 @@
 import {ref} from 'vue';
 
 const showForm = ref(false);
-const NewMemo = ref(" ");
+const NewMemo = ref("");
 const memos = ref([]);
+const errorMessages = ref("");
 
 const addMemo = () => {
+  if (!NewMemo.value) {
+    errorMessages.value = "Please enter a memo"
+    return;
+  }
   memos.value.push({
     id: Date.now(),
     memo: NewMemo.value,
@@ -13,7 +18,7 @@ const addMemo = () => {
     time: new Date().toLocaleTimeString(),
     backgroundColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
   })
-  NewMemo.value = " ";
+  NewMemo.value = "";
   showForm.value = false;
 };
 </script>
@@ -44,6 +49,7 @@ const addMemo = () => {
     <div v-show="showForm" class="form-overlay">
       <div class="form-modal">
         <button @click="showForm = false" class="form-close-btn">&times;</button>
+        <p v-if="errorMessages" class="form-error">{{ errorMessages }}</p>
         <textarea v-model="NewMemo" name="memo" id="memo" cols="30" rows="10"></textarea>
         <button @click="addMemo" class="form-submit-btn">Add</button>
       </div>
@@ -162,5 +168,9 @@ textarea {
   color: white;
   font-size: 20px;
   margin-top: 15px;
+}
+
+.form-error {
+  color: red;
 }
 </style>
