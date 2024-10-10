@@ -21,20 +21,28 @@ const addMemo = () => {
   NewMemo.value = "";
   showForm.value = false;
 };
+
+const deleteMemo = (id) => {
+  memos.value = memos.value.filter((memo) => memo.id !== id)
+}
 </script>
 
 <template>
   <main>
     <div class="container">
+      {{ memos }}
       <header>
         <h1 class="header-title">Memo</h1>
         <button @click="showForm = true" class="header-button">add +</button>
       </header>
       <div class="card-container">
         <div v-for="memo in memos" class="card" :key="memo.id" :style="{backgroundColor: memo.backgroundColor}">
-          <p class="card-content">
-            {{ memo.memo }}
-          </p>
+          <div class="card-dt">
+            <p class="card-content">
+              {{ memo.memo }}
+            </p>
+            <button @click="deleteMemo(memo.id)" class="card-button">X</button>
+          </div>
           <div class="card-dt">
             <p>
               {{ memo.date }}
@@ -172,5 +180,11 @@ textarea {
 
 .form-error {
   color: red;
+}
+
+.card-button {
+  text-align: center;
+  height: 25px;
+  width: 25px;
 }
 </style>
