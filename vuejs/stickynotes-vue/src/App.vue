@@ -5,19 +5,28 @@ const showForm = ref(false);
 const NewMemo = ref("");
 const memos = ref([]);
 const errorMessages = ref("");
+const editMemoId = ref(null)
 
 const addMemo = () => {
   if (!NewMemo.value) {
     errorMessages.value = "Please enter a memo"
     return;
   }
-  memos.value.push({
-    id: Date.now(),
-    memo: NewMemo.value,
-    date: new Date().toLocaleDateString(),
-    time: new Date().toLocaleTimeString(),
-    backgroundColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
-  })
+  if (editMemoId.value !== null) {
+    const memo = memos.value.find((memo) => memo.id === editMemoId.value);
+    memo.memo = NewMemo.value;
+    memo.date =new Date().toLocaleDateString();
+    memo.time = new Date().toLocaleTimeString();
+  } else {
+    memos.value.push({
+      id: Date.now(),
+      memo: NewMemo.value,
+      date: new Date().toLocaleDateString(),
+      time: new Date().toLocaleTimeString(),
+      backgroundColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
+    })
+  }
+  editMemoId.value = null;
   NewMemo.value = "";
   showForm.value = false;
 };
@@ -25,12 +34,20 @@ const addMemo = () => {
 const deleteMemo = (id) => {
   memos.value = memos.value.filter((memo) => memo.id !== id)
 }
+
+const editMemo = (id) => {
+  const memo = memos.value.find((memo) => memo.id === id);
+  NewMemo.value = memo.memo;
+  showForm.value = true;
+  editMemoId.value = id;
+}
 </script>
 
 <template>
   <main>
     <div class="container">
       {{ memos }}
+      {{ editMemoId }}
       <header>
         <h1 class="header-title">Memo</h1>
         <button @click="showForm = true" class="header-button">add +</button>
@@ -41,7 +58,10 @@ const deleteMemo = (id) => {
             <p class="card-content">
               {{ memo.memo }}
             </p>
-            <button @click="deleteMemo(memo.id)" class="card-button">X</button>
+            <div class="card-button">
+              <button @click="editMemo(memo.id)">✏️</button>
+              <button @click="deleteMemo(memo.id)">❌</button>
+            </div>
           </div>
           <div class="card-dt">
             <p>
