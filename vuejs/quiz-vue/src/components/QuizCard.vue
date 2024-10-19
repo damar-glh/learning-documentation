@@ -1,5 +1,5 @@
 <script setup>
-
+defineProps(['quiz']);
 </script>
 
 <template>
