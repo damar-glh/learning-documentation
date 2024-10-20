@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 1000,
+    "description": "This is a laptop",
+    "image": "https://via.placeholder.com/150",
+    "category": "Electronics",
+    "year": 2020
+  },
+  {
+    "id": 2,
+    "name": "Mobile",
+    "price": 500,
+    "description": "This is a mobile",
+    "image": "https://via.placeholder.com/150",
+    "category": "Electronics",
+    "year": 2020
+  },
+  {
+    "id": 3,
+    "name": "Shirt",
+    "price": 50,
+    "description": "This is a shirt",
+    "image": "https://via.placeholder.com/150",
+    "category": "Clothes",
+    "year": 2020
+  },
+  {
+    "id": 4,
+    "name": "Trousers",
+    "price": 70,
+    "description": "This is a trousers",
+    "image": "https://via.placeholder.com/150",
+    "category": "Clothes",
+    "year": 2020
+  },
+  {
+    "id": 5,
+    "name": "Shoes",
+    "price": 80,
+    "description": "This is a shoes",
+    "image": "https://via.placeholder.com/150",
+    "category": "Footwear",
+    "year": 2020
+  },
+  {
+    "id": 6,
+    "name": "Socks",
+    "price": 10,
+    "description": "This is a socks",
+    "image": "https://via.placeholder.com/150",
+    "category": "Footwear",
+    "year": 2020
+  }
+]
