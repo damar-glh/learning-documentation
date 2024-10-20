@@ -14,12 +14,18 @@ const products = product.find((productItem) => productItem.id === Number(route.p
     <div class="product">
       <h2>Product</h2>
       <h2>{{ products.name }}</h2>
+      <img :src="products.image" :alt="products.name" />
       <p>{{ products.description }}</p>
-      <p>{{ products.price }}</p>
+      <p>Rp. {{ products.price }}</p>
     </div>
   </div>
 </template>
 
 <style scoped>
-
+.product {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 </style>
