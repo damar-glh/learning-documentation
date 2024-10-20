@@ -6,7 +6,11 @@
     "description": "This is a laptop",
     "image": "https://via.placeholder.com/150",
     "category": "Electronics",
-    "year": 2020
+    "year": 2020,
+    "owner": {
+        "name": "John Doe",
+        "email": "johndoe@gmai.com"
+    }
   },
   {
     "id": 2,
@@ -15,7 +19,11 @@
     "description": "This is a mobile",
     "image": "https://via.placeholder.com/150",
     "category": "Electronics",
-    "year": 2020
+    "year": 2020,
+    "owner": {
+        "name": "Jane Doe",
+        "email": "janedoe@gmail.com"
+    }
   },
   {
     "id": 3,
@@ -24,7 +32,11 @@
     "description": "This is a shirt",
     "image": "https://via.placeholder.com/150",
     "category": "Clothes",
-    "year": 2020
+    "year": 2020,
+    "owner": {
+        "name": "Risalah Aji",
+        "email": "risalahaji@gmail.com"
+    }
   },
   {
     "id": 4,
@@ -33,7 +45,11 @@
     "description": "This is a trousers",
     "image": "https://via.placeholder.com/150",
     "category": "Clothes",
-    "year": 2020
+    "year": 2020,
+    "owner": {
+      "name": "Akbar Maulana",
+      "email": "akbarmaulana@gmail.com"
+    }
   },
   {
     "id": 5,
@@ -42,7 +58,11 @@
     "description": "This is a shoes",
     "image": "https://via.placeholder.com/150",
     "category": "Footwear",
-    "year": 2020
+    "year": 2020,
+    "owner": {
+      "name": "Maha Rani",
+      "email": "maharanai@gmail.com"
+    }
   },
   {
     "id": 6,
@@ -51,6 +71,10 @@
     "description": "This is a socks",
     "image": "https://via.placeholder.com/150",
     "category": "Footwear",
-    "year": 2020
+    "year": 2020,
+    "owner": {
+      "name": "Rahma",
+      "email": "rahma@gmail.com"
+    }
   }
 ]

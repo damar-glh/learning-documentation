@@ -1,5 +1,5 @@
 <script setup>
-import { useRoute } from "vue-router";
+import { useRoute, RouterView } from "vue-router";
 import product from "../data/Data.json";
 
 const route = useRoute();
@@ -17,6 +17,7 @@ const products = product.find((productItem) => productItem.id === Number(route.p
       <img :src="products.image" :alt="products.name" />
       <p>{{ products.description }}</p>
       <p>Rp. {{ products.price }}</p>
+      <RouterView />
     </div>
   </div>
 </template>
