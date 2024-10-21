@@ -8,12 +8,15 @@ const { owner } = product.find((productItem) => productItem.id === Number(route.
 </script>
 
 <template>
-  <div>
+  <div v-if="owner">
     <div class="product">
       <h2>Owner</h2>
       <h2>{{ owner.name }}</h2>
       <p>{{ owner.email }}</p>
     </div>
+  </div>
+  <div v-else>
+    <p>Owner not found.</p>
   </div>
 </template>
 

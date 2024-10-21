@@ -21,7 +21,7 @@ function goBack() {
   <div>
     <h1>Product</h1>
     <p>This is the product page.</p>
-    <div class="product">
+    <div class="product" v-if="products">
       <h2>Product</h2>
       <h2>{{ products.name }}</h2>
       <img :src="products.image" :alt="products.name" />
@@ -30,6 +30,9 @@ function goBack() {
       <button @click="showOwner">Show Owner</button>
       <button @click="goBack">Go Back</button>
       <RouterView />
+    </div>
+    <div v-else>
+      <p>Product not found.</p>
     </div>
   </div>
 </template>
