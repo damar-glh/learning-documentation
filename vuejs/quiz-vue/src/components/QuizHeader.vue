@@ -1,6 +1,12 @@
+<script setup>
+import { defineProps } from 'vue';
+
+const { questionPage } = defineProps(['questionPage']);
+</script>
+
 <template>
   <header>
-    <h4>Questions 1/2</h4>
+    <h4>Questions {{ questionPage }}</h4>
     <div class="bar">
       <div class="bar-progress"></div>
     </div>
