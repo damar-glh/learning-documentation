@@ -1,10 +1,20 @@
 <script setup>
-import { useRoute, RouterView } from "vue-router";
+import { useRoute, useRouter, RouterView } from "vue-router";
 import product from "../data/Data.json";
 
 const route = useRoute();
+const router = useRouter();
+const productId = Number(route.params.id);
 
-const products = product.find((productItem) => productItem.id === Number(route.params.id));
+const products = product.find((productItem) => productItem.id === productId);
+
+function showOwner() {
+  router.push({ name: "Owner", params: { id: productId } });
+}
+
+function goBack() {
+  router.go(-1);
+}
 </script>
 
 <template>
@@ -17,6 +27,8 @@ const products = product.find((productItem) => productItem.id === Number(route.p
       <img :src="products.image" :alt="products.name" />
       <p>{{ products.description }}</p>
       <p>Rp. {{ products.price }}</p>
+      <button @click="showOwner">Show Owner</button>
+      <button @click="goBack">Go Back</button>
       <RouterView />
     </div>
   </div>
