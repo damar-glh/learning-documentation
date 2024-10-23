@@ -8,9 +8,19 @@ import quizes from '@/data/quizes.json'
 const route = useRoute();
 const quiz = quizes.find((quiz) => quiz.id === parseInt(route.params.id));
 const currentIndexQuestion = ref(0);
+const selectOptionAnswer = ref(0);
 
 const questionPage = computed(() => `${currentIndexQuestion.value + 1}/${quiz.questions.length}`);
 const barProgress = computed(() => `${(currentIndexQuestion.value + 1) * 100 / quiz.questions.length}%`);
+
+function selectOptionsAnswer(answers) {
+    if (answers.correct) {
+      selectOptionAnswer.value++;
+    }
+    if (currentIndexQuestion.value < quiz.questions.length - 1) {
+      currentIndexQuestion.value++;
+    }
+}
 // const questionPage = ref(`${currentIndexQuestion.value + 1}/${quiz.questions.length}`);
 //
 // watch(
@@ -24,7 +34,7 @@ const barProgress = computed(() => `${(currentIndexQuestion.value + 1) * 100 / q
 <template>
   <div class="quiz">
     <QuizHeader :questionPage="questionPage" :barProgress="barProgress"/>
-    <QuizContent :question="quiz.questions[currentIndexQuestion]"/>
+    <QuizContent :question="quiz.questions[currentIndexQuestion]" @selectAnswer="selectOptionsAnswer"/>
     <div class="button">
       <div class="button-prev-next">
         <button @click="currentIndexQuestion--" :disabled="currentIndexQuestion === 0">Previous</button>
