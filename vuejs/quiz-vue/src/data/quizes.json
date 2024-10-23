@@ -51,6 +51,198 @@
             "correct": false
           }
         ]
+      },
+      {
+        "id": 3,
+        "text": "Which language is primarily used for developing Android apps?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Swift",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Java",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "C++",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "Which of these is a NoSQL database?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "MySQL",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "PostgreSQL",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "MongoDB",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "Which of the following is a JavaScript framework?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Vue.js",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Laravel",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Django",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "What is a closure in JavaScript?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "A function inside a function",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "A way to organize CSS",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "A type of loop",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "Which of these is a CSS framework?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Angular",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Bootstrap",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Flask",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "Which of the following is an interpreted language?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "C",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Python",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "C++",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "Which HTML tag is used for creating an ordered list?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "<ul>",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "<ol>",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "<li>",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "What does CSS stand for?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Cascading Style Sheets",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Creative Style Scripts",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Computer Styling System",
+            "correct": false
+          }
+        ]
       }
     ]
   },
@@ -103,6 +295,198 @@
             "id": 3,
             "label": "C",
             "text": "Input Output Terminal",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "Which company developed the iPhone?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Samsung",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Apple",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Sony",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "Which of these is a social media platform?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Photoshop",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Facebook",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Microsoft Word",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "What year was the first iPhone released?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "2005",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "2007",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "2010",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "Which company developed the Android operating system?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Google",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Microsoft",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Apple",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "What is the main use of virtual reality (VR) technology?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Word Processing",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Gaming and Simulations",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Spreadsheets",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "Which technology is used to make phone calls over the internet?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "VoIP",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "VPN",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "VLAN",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "Which technology allows users to access a remote computer securely over the internet?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Firewall",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "VPN",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "IP Address",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "What is a 3D printer used for?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Printing 2D documents",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Creating 3D objects",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Scanning documents",
             "correct": false
           }
         ]
@@ -161,6 +545,198 @@
             "correct": false
           }
         ]
+      },
+      {
+        "id": 3,
+        "text": "What planet is known as the Red Planet?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Mars",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Jupiter",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Venus",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "What gas do plants absorb from the atmosphere?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Oxygen",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Carbon Dioxide",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Nitrogen",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "What is the hardest natural substance on Earth?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Iron",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Diamond",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Gold",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "What is the nearest star to Earth?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Alpha Centauri",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Proxima Centauri",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "The Sun",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "What is the largest planet in our solar system?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Earth",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Jupiter",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Saturn",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "Which organ is responsible for pumping blood in the human body?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Brain",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Lungs",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Heart",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "What is the process by which plants make food called?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Respiration",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Photosynthesis",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Transpiration",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "Which element is necessary for breathing and found in the air?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Carbon",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Oxygen",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Hydrogen",
+            "correct": false
+          }
+        ]
       }
     ]
   },
@@ -213,6 +789,198 @@
             "id": 3,
             "label": "C",
             "text": "Atacama",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "What is the tallest tree species on Earth?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Sequoia",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Oak",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Pine",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "What is the largest ocean on Earth?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Atlantic Ocean",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Pacific Ocean",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Indian Ocean",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "Which animal is known for its ability to change color to blend with its surroundings?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Octopus",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Chameleon",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Frog",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "What is the largest land predator?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Tiger",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Polar Bear",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Lion",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "Which bird is known for its ability to mimic sounds?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Parrot",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Sparrow",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Owl",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "What is the fastest land animal?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Cheetah",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Lion",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Leopard",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "Which animal is known for its slow movement and lives in trees?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Sloth",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Koala",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Panda",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "What is the longest river in the world?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Amazon",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Nile",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Yangtze",
             "correct": false
           }
         ]
@@ -269,6 +1037,198 @@
             "label": "C",
             "text": "William Shakespeare",
             "correct": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "What is the tallest mountain in the world?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "K2",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Mount Everest",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Kangchenjunga",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "In which year did World War II end?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "1945",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "1939",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "1918",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "What is the largest continent by area?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Africa",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Asia",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Europe",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "Who invented the telephone?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Thomas Edison",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Alexander Graham Bell",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Nikola Tesla",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "What is the largest country by population?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "United States",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "China",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "India",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "Which ocean is the Bermuda Triangle located in?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Indian Ocean",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Atlantic Ocean",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Pacific Ocean",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "What is the smallest country in the world?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Monaco",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Vatican City",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Malta",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "Who was the first man to walk on the moon?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Yuri Gagarin",
+            "correct": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Neil Armstrong",
+            "correct": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Buzz Aldrin",
+            "correct": false
           }
         ]
       }
