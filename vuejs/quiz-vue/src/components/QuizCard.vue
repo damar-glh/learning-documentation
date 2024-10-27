@@ -15,7 +15,6 @@ function goQuiz() {
     <div class="card-body">
       <h2>{{ quiz.title }}</h2>
       <p>{{ quiz.questions.length }} Questions</p>
-      <button>Next</button>
     </div>
   </div>
 </template>

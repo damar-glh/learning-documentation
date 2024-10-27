@@ -25,12 +25,12 @@ header h4 {
 .bar {
   width: 100%;
   height: 50px;
-  border: 3px solid #adf7b6;
+  border: 3px solid #a0ced9;
 }
 
 .bar-progress {
   height: 100%;
   width: 0%;
-  background-color: #adf7b6;
+  background-color: #a0ced9;
 }
 </style>
