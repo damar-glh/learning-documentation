@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Tutorial belajar reactjs lengkap",
+    "description": "Belajar reactjs dari dasar hingga mahir dengan mudah dan cepat. Dengan tutorial ini kamu akan menguasai reactjs dalam waktu singkat. Tutorial ini cocok untuk pemula maupun yang sudah mahir. Tutorial ini akan membahas reactjs dari dasar hingga mahir.",
+    "tags": [
+      "react",
+      "frontend"
+    ],
+    "date": "2023-01-01",
+    "isNew": true
+  },
+  {
+    "title": "Meningkatkan performa di reactjs",
+    "description": "Meningkatkan performa di reactjs dengan cara yang mudah dan cepat. Dengan tutorial ini kamu akan menguasai cara meningkatkan performa di reactjs. Tutorial ini cocok untuk pemula maupun yang sudah mahir. Tutorial ini akan membahas cara meningkatkan performa di reactjs.",
+    "tags": [
+      "react",
+      "frontend"
+    ],
+    "date": "2023-01-02",
+    "isNew": false
+  },
+  {
+    "title": "Cara menggunakan chakra-ui di reactjs",
+    "description": "Menggunakan chakra-ui di reactjs dengan cara yang mudah dan cepat. Dengan tutorial ini kamu akan menguasai cara menggunakan chakra-ui di reactjs. Tutorial ini cocok untuk pemula maupun yang sudah mahir. Tutorial ini akan membahas cara menggunakan chakra-ui di reactjs.",
+    "tags": [
+      "react",
+      "css"
+    ],
+    "date": "2023-01-03",
+    "isNew": false
+  }
+]

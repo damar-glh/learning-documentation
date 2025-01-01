@@ -1,5 +1,6 @@
 <script setup>
 import {ref} from 'vue'
+import gsap from 'gsap'
 
 const tasks = ref([
   {id: 1, name: 'Learn Vue 3'},
@@ -26,6 +27,36 @@ const addTask = () => {
 const removeTask = (task) => {
   tasks.value = tasks.value.filter(t => t.id !== task.id)
 }
+
+const beforeEnter = (el) => {
+  el.style.opacity = 0
+  el.style.transform = 'translateX(-30px)'
+}
+
+const enter = (el, done) => {
+  gsap.to(el, {
+    opacity: 1,
+    x: 0,
+    scale: 1,
+    duration: 0.3,
+    delay: el.dataset.index * 0.3,
+  })
+}
+
+const beforeLeave = (el) => {
+  el.style.position = 'absolute'
+  el.style.transform = 'translateX(0px)'
+}
+
+const leave = (el, done) => {
+  gsap.to(el, {
+    opacity: 0,
+    x: 30,
+    scale: 0,
+    duration: 0.3,
+    delay: el.dataset.index * 0.3,
+  })
+}
 </script>
 
 <template>
@@ -41,9 +72,9 @@ const removeTask = (task) => {
         </svg>
       </button>
     </div>
-    <TransitionGroup name="list">
-    <div v-for="task in tasks" :key="task.id" class="card-list">
-      {{ task.name }}, {{tasks.id}}
+    <TransitionGroup name="list" appear @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave" @leave="leave">
+    <div v-for="(task, index) in tasks" :key="task.id" :data-index="index" class="card-list">
+      {{ task.name }}
       <div class="btn-edit">
 <!--        <button @click="tasks.value = tasks.value.filter(t => t.id !== task.id)">-->
 <!--          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"-->
@@ -122,6 +153,7 @@ const removeTask = (task) => {
   justify-content: center;
 }
 
+/*
 .list-enter-from {
 	opacity: 0;
 	transform: scale(0.6);
@@ -131,10 +163,12 @@ const removeTask = (task) => {
 	opacity: 1;
 	transform: scale(1);
 }
+
 .list-enter-active {
 	transition: all 0.5s ease;
 }
-
+*/
+/*
 .list-leave-from {
   opacity: 1;
   transform: scale(1);
@@ -149,6 +183,7 @@ const removeTask = (task) => {
   transition: all 0.5s ease;
   position: absolute;
 }
+*/
 
 .list-move {
   transition: all 0.5s ease;
