@@ -30,7 +30,7 @@
     "description": "Ergonomic gaming mouse with customizable RGB lighting and precision tracking.",
     "category": "Accessories",
     "stock": 80,
-    "rating": 4.7,
+    "rating": 2.7,
     "images": [
       "https://s.alicdn.com/@sc04/kf/H61809b6b622746a7a402f585872e3bfcR.jpg_720x720q50.jpg",
       "images/mouse2.jpg"
@@ -49,7 +49,7 @@
     "description": "Durable and stylish smartphone case with shockproof protection.",
     "category": "Accessories",
     "stock": 250,
-    "rating": 4.2,
+    "rating": 3.2,
     "images": [
       "https://s.alicdn.com/@sc04/kf/Hc830bcf24c844bb8b86bc2f4313b5bf4p.png_720x720q50.jpg",
       "images/case2.jpg"
@@ -68,7 +68,7 @@
     "description": "Portable Bluetooth speaker with deep bass and 12-hour battery life.",
     "category": "Electronics",
     "stock": 65,
-    "rating": 4.6,
+    "rating": 3.6,
     "images": [
       "https://s.alicdn.com/@sc04/kf/H43242b6b749a4c0a9652860199103708K.jpg_720x720q50.jpg",
       "images/speaker2.jpg"
@@ -87,7 +87,7 @@
     "description": "Non-slip yoga mat with extra cushioning for comfortable workouts.",
     "category": "Fitness",
     "stock": 150,
-    "rating": 4.8,
+    "rating": 2.8,
     "images": [
       "https://s.alicdn.com/@sc04/kf/H3e2987010d6f4ce3bd4929f6782656bcO.jpg_720x720q50.jpg",
       "images/yogamat2.jpg"
@@ -125,7 +125,7 @@
     "description": "Advanced fitness tracker with heart rate monitor and step counter.",
     "category": "Fitness",
     "stock": 40,
-    "rating": 4.4,
+    "rating": 1.4,
     "images": [
       "https://s.alicdn.com/@sc04/kf/HTB14zqKX79E3KVjSZFGq6A19XXax.jpg_720x720q50.jpg",
       "images/tracker2.jpg"
@@ -144,7 +144,7 @@
     "description": "Waterproof laptop backpack with multiple compartments for storage.",
     "category": "Accessories",
     "stock": 200,
-    "rating": 4.7,
+    "rating": 3.7,
     "images": [
       "https://s.alicdn.com/@sc04/kf/H7e323e91694843c8b0502e73590ff665p.jpg_720x720q50.jpg",
       "images/backpack2.jpg"
@@ -163,7 +163,7 @@
     "description": "High-resolution 4K monitor with stunning picture quality and HDR support.",
     "category": "Electronics",
     "stock": 25,
-    "rating": 4.9,
+    "rating": 3.9,
     "images": [
       "https://s.alicdn.com/@sc04/kf/Hf47c77c4d7be41f2b803c622653a0075n.jpg_720x720q50.jpg",
       "images/monitor2.jpg"

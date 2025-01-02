@@ -23,7 +23,10 @@ export default function ProductCard(props) {
     return (
         <div className="product-card">
             <img src={props.images[0]} alt={props.name}/>
-            <p className="product-category">{props.category}</p>
+            <div className="product-content">
+                <p className="product-category">{props.category}</p>
+                <p className="product-rating">{props.rating}</p>
+            </div>
             <div className="product-content">
                 <h3 className="product-title">{props.name}</h3>
                 <p className="product-price">${props.price}</p>

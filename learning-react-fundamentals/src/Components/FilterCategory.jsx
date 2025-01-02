@@ -14,7 +14,7 @@ export default function FilterCategory({onFilterCategory, categoryList}) {
     return (
         <div className="filter-category">
             <select name="category" onChange={handleFilterCategory}>
-                <option value="All">All</option>
+                <option value="Category">Category</option>
                 {categoryList.map((category, index) => (
                     <option key={index} value={category}>{category}</option>
                 ))}

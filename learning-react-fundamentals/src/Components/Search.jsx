@@ -15,7 +15,7 @@ export default function Search({onSearchInput}) {
         <div className="search">
             <form onSubmit={handleSearchInput}>
                 <input type="text" placeholder="Search" name="searchInput"/>
-                <button type="submit">Search</button>
+                <button type="submit" className="btn-search">Search</button>
             </form>
         </div>
     )
