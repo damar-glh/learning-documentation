@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import {ProductContext} from "../Context/Product.js";
+import {useContext} from "react";
 
 ProductCard.propTypes = {
     name: PropTypes.string,
@@ -19,6 +21,7 @@ export default function ProductCard(props) {
     //         <img key={index} src={img} alt={props.name}/>
     //     )
     // })
+    const product = useContext(ProductContext);
 
     return (
         <div className="product-card">
@@ -34,6 +37,12 @@ export default function ProductCard(props) {
             {/*<p className="product-stock">Available: {props.stock}</p>*/}
             {/*<p className="product-rating">{props.rating}</p>*/}
             <p className="product-description">{props.description}</p>
+            {/*{product.tags.map((tag, index) => {*/}
+            {/*    return (*/}
+            {/*        <span key={index} className="product-tag">{tag}</span>*/}
+            {/*    )*/}
+            {/*})}*/}
+            {product.isAvailable ? <p className="product-available">Available</p> : <p className="product-unavailable">Unavailable</p>}
             <button className="product-button">Add to Cart</button>
         </div>
     )
