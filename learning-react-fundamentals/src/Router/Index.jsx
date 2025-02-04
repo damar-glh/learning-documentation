@@ -1,12 +1,14 @@
 import {createBrowserRouter} from "react-router-dom";
-import DefaultLayout from "../Components/Layouts/DefaultLayout.jsx";
+import DefaultLayout from "../Components/Layouts/DefaultLayout";
 import {lazy} from "react";
+import LazyWrap from "./LazyWrap";
 
-const Home = lazy(() => import("../Pages/Home.jsx"));
-const About = lazy(() => import("../Pages/About.jsx"));
-const Products = lazy(() => import("../Pages/Product/Products.jsx"));
-const Contact = lazy(() => import("../Pages/Contact.jsx"));
-const ErrorPage = lazy(() => import("../Components/ErrorPage.jsx"));
+const Home = LazyWrap(lazy(() => import("../Pages/Home")));
+const About = LazyWrap(lazy(() => import("../Pages/About")));
+const Products = LazyWrap(lazy(() => import("../Pages/Product/Products")));
+const ProductDetails = LazyWrap(lazy(() => import("../Pages/Product/ProductDetails")));
+const Contact = LazyWrap(lazy(() => import("../Pages/Contact")));
+const ErrorPage = LazyWrap(lazy(() => import("../Components/ErrorPage")));
 
 const router = createBrowserRouter([
     {
@@ -16,7 +18,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Home/>,
+                element: <Home/>
             },
             {
                 path: "/about",
@@ -24,7 +26,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/products",
-                element: <Products/>,
+                element: <Products/>
+            },
+            {
+                path: "/products/:id",
+                element: <ProductDetails/>,
             },
             {
                 path: "/contact",

@@ -1,10 +1,10 @@
 import {useEffect, useState} from "react";
 import PropTypes from "prop-types";
 import ProductCard from "./ProductCard.jsx";
-import productsData from "../Data/Product.json";
+import productsData from "../../Data/Product.json";
 import Search from "./Search.jsx";
 import FilterCategory from "./FilterCategory.jsx";
-import useDebounceSearch from "../hooks/useDebounceSearch.jsx";
+import useDebounceSearch from "../../hooks/useDebounceSearch.jsx";
 import FilterPrice from "./FilterPrice.jsx";
 import ProductNotFound from "./ProductNotFound.jsx";
 import FilterRating from "./FilterRating.jsx";

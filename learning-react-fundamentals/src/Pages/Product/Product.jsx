@@ -1,4 +1,4 @@
-import ProductComponent from "../../Components/ProductComponent.jsx";
+import ProductComponent from "../../Components/Products/ProductComponent.jsx";
 import "./Product.css";
 
 export default function Product() {

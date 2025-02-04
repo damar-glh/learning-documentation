@@ -2,6 +2,7 @@ import {useContext, useState} from "react";
 import {ProductContext} from "../../Context/Product.js";
 import {AuthContext} from "../../Context/Auth.js";
 import Product from "./Product.jsx";
+import {Outlet} from "react-router-dom";
 
 export default function Products() {
     const product = useContext(ProductContext);
@@ -11,6 +12,7 @@ export default function Products() {
             <AuthContext.Provider value={{login, setLogin}}>
                 <ProductContext.Provider value={product}>
                     <Product/>
+                    <Outlet/>
                 </ProductContext.Provider>
             </AuthContext.Provider>
         </>

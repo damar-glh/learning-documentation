@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
-import {ProductContext} from "../Context/Product.js";
+import {ProductContext} from "../../Context/Product.js";
 import {useContext} from "react";
+import {useNavigate} from "react-router-dom";
 
 ProductCard.propTypes = {
     name: PropTypes.string,
@@ -22,9 +23,14 @@ export default function ProductCard(props) {
     //     )
     // })
     const product = useContext(ProductContext);
+    const navigate = useNavigate();
+
+    const productDetails = () => {
+        navigate(`/products/${props.id}`);
+    }
 
     return (
-        <div className="product-card">
+        <div className="product-card" onClick={productDetails}>
             <img src={props.images[0]} alt={props.name}/>
             <div className="product-content">
                 <p className="product-category">{props.category}</p>
