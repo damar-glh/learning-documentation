@@ -9,6 +9,7 @@ const Products = LazyWrap(lazy(() => import("../Pages/Product/Products")));
 const ProductDetails = LazyWrap(lazy(() => import("../Pages/Product/ProductDetails")));
 const Contact = LazyWrap(lazy(() => import("../Pages/Contact")));
 const ErrorPage = LazyWrap(lazy(() => import("../Components/ErrorPage")));
+import {ProductContext, ProductById} from "../Api/LoaderData.js";
 
 const router = createBrowserRouter([
     {
@@ -26,11 +27,13 @@ const router = createBrowserRouter([
             },
             {
                 path: "/products",
-                element: <Products/>
+                element: <Products/>,
+                loader: ProductContext
             },
             {
                 path: "/products/:id",
                 element: <ProductDetails/>,
+                dataLoader: ProductById,
             },
             {
                 path: "/contact",

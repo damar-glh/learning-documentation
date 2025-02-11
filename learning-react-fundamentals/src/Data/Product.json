@@ -14,8 +14,12 @@
     "stock": 120,
     "rating": 4.5,
     "images": [
-      "https://s.alicdn.com/@sc04/kf/Hce94fdef1d104ac5927c6f882cb71adf9.jpg_720x720q50.jpg",
-      "images/earbuds2.jpg"
+      ["https://s.alicdn.com/@sc04/kf/Hce94fdef1d104ac5927c6f882cb71adf9.jpg_720x720q50.jpg",
+      "images/earbuds2.jpg"],
+      ["https://s.alicdn.com/@sc04/kf/H50ce0d4eee704af59d8b2fafcf8b68a3G.jpg_720x720q50.jpg"],
+      ["https://s.alicdn.com/@sc04/kf/Hc42b882513e54817b99f0856d2272eae4.jpg_720x720q50.jpg"],
+      ["https://s.alicdn.com/@sc04/kf/Ha1e8cdd6188f438ba59837f5c1a33b95a.jpg_720x720q50.jpg"],
+      ["https://s.alicdn.com/@sc04/kf/H44d370845fd940789be30d838e71c04fF.jpg_720x720q50.jpg"]
     ],
     "isAvailable": true
   },

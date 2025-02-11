@@ -1,5 +1,5 @@
 import {useContext, useState} from "react";
-import {ProductContext} from "../../Context/Product.js";
+import {ProductContext} from "../../Context/Product.jsx";
 import {AuthContext} from "../../Context/Auth.js";
 import Product from "./Product.jsx";
 import {Outlet} from "react-router-dom";

@@ -25,6 +25,28 @@ nav {
     text-decoration: none;
 }
 
+.navbar-item .active {
+    color: wheat;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.cart {
+    margin-right: 1rem;
+    color: white;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+}
+
 .search {
     padding: 0.5rem;
     font-size: 1rem;

@@ -8,7 +8,7 @@ import useDebounceSearch from "../../hooks/useDebounceSearch.jsx";
 import FilterPrice from "./FilterPrice.jsx";
 import ProductNotFound from "./ProductNotFound.jsx";
 import FilterRating from "./FilterRating.jsx";
-import {useParams} from "react-router-dom";
+import {useLoaderData, useParams} from "react-router-dom";
 
 ProductComponent.propTypes = {
     id: PropTypes.number
@@ -17,8 +17,8 @@ ProductComponent.propTypes = {
 export default function ProductComponent() {
     const [search, setSearch] = useState("");
     const [products, setProducts] = useState(productsData);
+    // const product = useLoaderData();
     const [loading, setLoading] = useState(true);
-    let params = useParams();
 
     const uniqueCategory = [...new Set(productsData.map((product) => product.category))];
 

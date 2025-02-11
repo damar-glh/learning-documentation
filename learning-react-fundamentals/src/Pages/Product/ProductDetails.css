@@ -1,0 +1,39 @@
+.product-details {
+    display: flex;
+}
+
+.product-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container-img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.choice-img {
+    width: 80px;
+    border-radius: 8px;
+}
+
+.product-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

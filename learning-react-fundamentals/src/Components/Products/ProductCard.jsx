@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import {ProductContext} from "../../Context/Product.js";
+import {ProductContext} from "../../Context/Product.jsx";
 import {useContext} from "react";
 import {useNavigate} from "react-router-dom";
 
@@ -28,28 +28,32 @@ export default function ProductCard(props) {
     const productDetails = () => {
         navigate(`/products/${props.id}`);
     }
+    const {addToCart} = useContext(ProductContext)
 
     return (
-        <div className="product-card" onClick={productDetails}>
-            <img src={props.images[0]} alt={props.name}/>
-            <div className="product-content">
-                <p className="product-category">{props.category}</p>
-                <p className="product-rating">{props.rating}</p>
+        <div className="product-card">
+            <div onClick={productDetails}>
+                <img src={props.images[0]} alt={props.name}/>
+                <div className="product-content">
+                    <p className="product-category">{props.category}</p>
+                    <p className="product-rating">{props.rating}</p>
+                </div>
+                <div className="product-content">
+                    <h3 className="product-title">{props.name}</h3>
+                    <p className="product-price">${props.price}</p>
+                </div>
+                {/*<p className="product-stock">Available: {props.stock}</p>*/}
+                {/*<p className="product-rating">{props.rating}</p>*/}
+                <p className="product-description">{props.description}</p>
+                {/*{product.tags.map((tag, index) => {*/}
+                {/*    return (*/}
+                {/*        <span key={index} className="product-tag">{tag}</span>*/}
+                {/*    )*/}
+                {/*})}*/}
             </div>
-            <div className="product-content">
-                <h3 className="product-title">{props.name}</h3>
-                <p className="product-price">${props.price}</p>
+            <div className="product-actions">
+                <button className="product-button" onClick={addToCart}>Add to Cart</button>
             </div>
-            {/*<p className="product-stock">Available: {props.stock}</p>*/}
-            {/*<p className="product-rating">{props.rating}</p>*/}
-            <p className="product-description">{props.description}</p>
-            {/*{product.tags.map((tag, index) => {*/}
-            {/*    return (*/}
-            {/*        <span key={index} className="product-tag">{tag}</span>*/}
-            {/*    )*/}
-            {/*})}*/}
-            {product.isAvailable ? <p className="product-available">Available</p> : <p className="product-unavailable">Unavailable</p>}
-            <button className="product-button">Add to Cart</button>
         </div>
     )
 }
